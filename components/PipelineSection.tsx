@@ -84,8 +84,8 @@ interface PipelineRowProps {
 function PipelineRow({ stage, title, body, bullets, mock, reverse, last }: PipelineRowProps) {
   return (
     <div
-      className={`grid grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-14 ${
-        last ? '' : 'mb-16 md:mb-24'
+      className={`grid grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-[60px] ${
+        last ? '' : 'mb-16 md:mb-[100px]'
       }`}
     >
       <div className={reverse ? 'md:order-2' : ''}>
@@ -118,7 +118,7 @@ function PipelineRow({ stage, title, body, bullets, mock, reverse, last }: Pipel
 
 function MockShell({ title, status, children }: { title: string; status: string; children: ReactNode }) {
   return (
-    <div className="relative rounded-[14px] border border-line bg-white p-5.5 shadow-[0_30px_60px_-30px_rgba(30,38,53,0.15)]">
+    <div className="relative rounded-[14px] border border-line bg-white p-[22px] shadow-[0_30px_60px_-30px_rgba(30,38,53,0.15)]">
       <div className="mb-4 flex items-center justify-between border-b border-line pb-3.5">
         <div className="flex items-center gap-2 font-display text-sm font-bold text-graphite">
           <span className="h-2 w-2 rounded-full bg-teal" />
@@ -138,7 +138,7 @@ function HitListMock({ prospects }: { prospects: Prospect[] }) {
         {prospects.map((p) => (
           <div
             key={p.initials}
-            className="grid grid-cols-[auto_1fr_auto] items-center gap-3 rounded-lg bg-canvas p-3 transition-colors hover:bg-teal-tint"
+            className="grid grid-cols-[auto_1fr_auto] items-center gap-3 rounded-lg bg-canvas px-3 py-2.5 transition-colors hover:bg-teal-tint"
           >
             <div
               className="flex h-8 w-8 items-center justify-center rounded-full font-display text-[11px] font-bold text-white"
@@ -170,7 +170,7 @@ function OutreachMock() {
         <br />
         Noticed TechCorp just expanded into APAC. Our data shows eng leaders in similar expansions
         see{' '}
-        <span className="rounded bg-teal/10 px-1.5 py-0.5 font-mono text-xs text-teal">
+        <span className="rounded bg-teal/10 px-1.5 py-px font-mono text-xs text-teal">
           31% slower
         </span>{' '}
         first-deploy when cross-team alignment is informal.
@@ -200,7 +200,7 @@ function MsgInsight({ k, value }: { k: string; value: ReactNode }) {
 function ObjectionMock() {
   return (
     <MockShell title="Live coaching" status="Suggesting">
-      <div className="mb-2.5 rounded-r-lg border-l-[3px] border-slate bg-canvas p-3 text-[13px] font-semibold text-graphite">
+      <div className="mb-3 rounded-r-lg border-l-[3px] border-slate bg-canvas p-3 text-[13px] font-semibold text-graphite">
         &quot;We already have a solution for this.&quot;
       </div>
       <div className="rounded-r-lg border-l-[3px] border-teal bg-teal-tint p-3 text-[13px] text-graphite">
