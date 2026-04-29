@@ -6,7 +6,7 @@ interface LogoProps {
 }
 
 export default function Logo({ onDark = false }: LogoProps) {
-  const src = onDark ? '/alignify-logo-light.png' : '/alignify-logo-dark.jpg'
+  const src = onDark ? '/alignify-logo-light.png' : '/alignify-logo-dark.png'
   return (
     <Link href="/" className="inline-flex items-center text-inherit no-underline">
       <Image
