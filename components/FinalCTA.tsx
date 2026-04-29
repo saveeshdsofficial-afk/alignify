@@ -8,7 +8,7 @@ export default function FinalCTA() {
       <div className="mx-auto max-w-wrap px-7">
         <div
           className="relative overflow-hidden rounded-[20px] px-7 py-14 shadow-[0_50px_100px_-40px_rgba(30,38,53,0.4)] md:px-16 md:py-20"
-          style={{ background: 'linear-gradient(135deg,#1e2635 0%,#0f1117 100%)' }}
+          style={{ background: 'linear-gradient(135deg,#2E3950 0%,#171820 100%)' }}
         >
           <CtaDecoTR />
           <CtaDecoBL />

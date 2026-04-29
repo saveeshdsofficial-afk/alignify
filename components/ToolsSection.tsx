@@ -104,7 +104,7 @@ export default function ToolsSection() {
           {TOOLS.map((t) => (
             <article
               key={t.title}
-              className="rounded-[14px] border border-white/10 bg-graphite-2 p-7 transition-all hover:-translate-y-0.5 hover:border-teal hover:bg-[#2f3950]"
+              className="rounded-[14px] border border-white/10 bg-graphite-2 p-7 transition-all hover:-translate-y-0.5 hover:border-teal hover:bg-[#445270]"
             >
               <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-[10px] border border-teal-bright/30 bg-teal-bright/15 text-teal-bright">
                 {t.icon}

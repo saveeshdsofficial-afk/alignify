@@ -104,7 +104,7 @@ function ProductCard({ product }: { product: Product }) {
       }`}
       style={
         live
-          ? { background: 'linear-gradient(160deg,#1e2635 0%,#0f1117 100%)' }
+          ? { background: 'linear-gradient(160deg,#2E3950 0%,#171820 100%)' }
           : undefined
       }
     >

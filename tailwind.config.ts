@@ -5,13 +5,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: { DEFAULT: '#0f1117', soft: '#3d4450' },
-        graphite: { DEFAULT: '#1e2635', 2: '#2a3347', soft: '#3a4460' },
-        slate: { DEFAULT: '#6b7388', soft: '#9ca3b8' },
+        ink: { DEFAULT: '#171820', soft: '#3d4450' },
+        graphite: { DEFAULT: '#2E3950', 2: '#3a4660', soft: '#495C72' },
+        slate: { DEFAULT: '#495C72', soft: '#9ca3b8' },
         teal: {
-          DEFAULT: '#21a89f',
-          bright: '#3eccc4',
-          pale: '#7dddd8',
+          DEFAULT: '#21A89F',
+          bright: '#3ECCC4',
+          pale: '#7DDDD8',
           tint: '#e8f6f4',
         },
         line: '#dfe2e6',

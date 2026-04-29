@@ -4,7 +4,7 @@ import ProspectCard from './ProspectCard'
 const heroBg =
   'radial-gradient(ellipse 700px 400px at 85% 20%, rgba(33,168,159,0.15) 0%, transparent 60%),' +
   'radial-gradient(ellipse 500px 300px at 10% 90%, rgba(62,204,196,0.08) 0%, transparent 60%),' +
-  'linear-gradient(180deg, #1e2635 0%, #0f1117 100%)'
+  'linear-gradient(180deg, #2E3950 0%, #171820 100%)'
 
 export default function Hero() {
   return (

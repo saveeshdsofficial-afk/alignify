@@ -56,7 +56,7 @@ export default function ProblemSection() {
           {PROBLEMS.map((p) => (
             <article
               key={p.number}
-              className="group relative rounded-[14px] border border-white/10 bg-graphite-2 p-8 transition-all hover:-translate-y-1 hover:border-teal hover:bg-[#2f3950]"
+              className="group relative rounded-[14px] border border-white/10 bg-graphite-2 p-8 transition-all hover:-translate-y-1 hover:border-teal hover:bg-[#445270]"
             >
               <div className="mb-5 font-display text-5xl font-bold leading-none tracking-[-0.03em] text-stroke-teal">
                 {p.number}

@@ -47,8 +47,8 @@ details.faq-item > summary::after {
   height: 20px;
   border: 1.5px solid #dfe2e6;
   border-radius: 9999px;
-  background-image: linear-gradient(#6b7388, #6b7388),
-    linear-gradient(#6b7388, #6b7388);
+  background-image: linear-gradient(#495C72, #495C72),
+    linear-gradient(#495C72, #495C72);
   background-size: 8px 1.5px, 1.5px 8px;
   background-position: center;
   background-repeat: no-repeat;
