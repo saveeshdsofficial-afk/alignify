@@ -16,7 +16,7 @@ const TESTIMONIALS: Testimonial[] = [
     role: 'Head of Sales',
     logo: 'Innosystems',
     initials: 'SJ',
-    avatarClass: 'bg-gradient-to-br from-teal to-teal-bright',
+    avatarClass: 'bg-teal',
   },
   {
     quote: (<>&quot;The <strong className="font-bold text-teal">first five minutes</strong> of every call changed. We walk in already aligned.&quot;</>),

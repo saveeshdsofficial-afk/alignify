@@ -90,10 +90,10 @@ export default function ToolsSection() {
       />
       <div className="relative z-[2] mx-auto max-w-wrap px-7">
         <div className="mx-auto mb-14 max-w-[680px] text-center">
-          <span className="mono-eyebrow text-teal-bright">Inside Alignify for Sales</span>
+          <span className="mono-eyebrow text-teal">Inside Alignify for Sales</span>
           <h2 className="mt-3.5 font-display text-[clamp(32px,4.4vw,52px)] font-bold leading-[1.05] tracking-[-0.025em] text-white">
             Precision tools for{' '}
-            <span className="text-teal-bright">structured prospecting.</span>
+            <span className="text-teal">structured prospecting.</span>
           </h2>
           <p className="mt-4 text-[17px] leading-[1.6] text-white/70">
             Everything a sales professional needs to turn random cold calls into a targeted,
@@ -106,7 +106,7 @@ export default function ToolsSection() {
               key={t.title}
               className="rounded-[14px] border border-white/10 bg-graphite-2 p-7 transition-all hover:-translate-y-0.5 hover:border-teal hover:bg-[#445270]"
             >
-              <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-[10px] border border-teal-bright/30 bg-teal-bright/15 text-teal-bright">
+              <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-[10px] border border-teal/30 bg-teal/15 text-teal">
                 {t.icon}
               </div>
               <h4 className="mb-2.5 font-display text-xl font-bold tracking-[-0.015em]">

@@ -27,9 +27,9 @@ const config: Config = {
       },
       keyframes: {
         'pulse-ring': {
-          '0%': { boxShadow: '0 0 0 0 rgba(62,204,196,0.5)' },
-          '70%': { boxShadow: '0 0 0 10px rgba(62,204,196,0)' },
-          '100%': { boxShadow: '0 0 0 0 rgba(62,204,196,0)' },
+          '0%': { boxShadow: '0 0 0 0 rgba(33,168,159,0.5)' },
+          '70%': { boxShadow: '0 0 0 10px rgba(33,168,159,0)' },
+          '100%': { boxShadow: '0 0 0 0 rgba(33,168,159,0)' },
         },
         'pulse-chip': {
           '0%,100%': { opacity: '1' },

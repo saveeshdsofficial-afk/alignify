@@ -4,7 +4,6 @@ import StatsStrip from '@/components/StatsStrip'
 import ProblemSection from '@/components/ProblemSection'
 import ProductsSection from '@/components/ProductsSection'
 import PipelineSection from '@/components/PipelineSection'
-import BigStat from '@/components/BigStat'
 import Testimonials from '@/components/Testimonials'
 import ToolsSection from '@/components/ToolsSection'
 import FinalCTA from '@/components/FinalCTA'
@@ -21,7 +20,6 @@ export default function HomePage() {
         <ProblemSection />
         <ProductsSection />
         <PipelineSection />
-        <BigStat />
         <Testimonials />
         <ToolsSection />
         <FinalCTA />

@@ -36,14 +36,14 @@ export default function ProblemSection() {
         className="pointer-events-none absolute inset-0"
         style={{
           backgroundImage:
-            'radial-gradient(circle at 90% 10%, rgba(33,168,159,0.12) 0%, transparent 35%),radial-gradient(circle at 5% 90%, rgba(62,204,196,0.08) 0%, transparent 35%)',
+            'radial-gradient(circle at 90% 10%, rgba(33,168,159,0.12) 0%, transparent 35%),radial-gradient(circle at 5% 90%, rgba(33,168,159,0.08) 0%, transparent 35%)',
         }}
       />
       <div className="relative z-[2] mx-auto max-w-wrap px-7">
         <div className="mb-14 max-w-[680px]">
-          <span className="mono-eyebrow text-teal-bright">The Problem</span>
+          <span className="mono-eyebrow text-teal">The Problem</span>
           <h2 className="mt-3.5 font-display text-[clamp(32px,4.4vw,52px)] font-bold leading-[1.05] tracking-[-0.025em] text-white">
-            The cost of <span className="text-teal-bright">cold-calling.</span>
+            The cost of <span className="text-teal">cold-calling.</span>
           </h2>
           <p className="mt-4 text-[17px] leading-[1.6] text-white/70">
             A lack of real understanding of your prospect doesn&apos;t just waste time and
@@ -66,7 +66,7 @@ export default function ProblemSection() {
               </h3>
               <p className="mb-5 text-[14.5px] leading-[1.6] text-white/65">{p.body}</p>
               <div className="flex items-center gap-3 border-t border-white/10 pt-4">
-                <div className="font-display text-[28px] font-bold leading-none tracking-[-0.02em] text-teal-bright">
+                <div className="font-display text-[28px] font-bold leading-none tracking-[-0.02em] text-teal">
                   {p.metric.num}
                   <span className="text-[18px]">{p.metric.unit}</span>
                 </div>

@@ -3,7 +3,7 @@ import ProspectCard from './ProspectCard'
 
 const heroBg =
   'radial-gradient(ellipse 700px 400px at 85% 20%, rgba(33,168,159,0.15) 0%, transparent 60%),' +
-  'radial-gradient(ellipse 500px 300px at 10% 90%, rgba(62,204,196,0.08) 0%, transparent 60%),' +
+  'radial-gradient(ellipse 500px 300px at 10% 90%, rgba(33,168,159,0.08) 0%, transparent 60%),' +
   'linear-gradient(180deg, #2E3950 0%, #171820 100%)'
 
 export default function Hero() {
@@ -16,16 +16,16 @@ export default function Hero() {
 
       <div className="relative z-[2] mx-auto grid max-w-wrap grid-cols-1 items-center gap-x-14 gap-y-10 px-7 md:grid-cols-[1.05fr_1fr]">
         <div>
-          <div className="mb-7 inline-flex items-center gap-2.5 rounded-full border border-teal-bright/25 bg-teal-bright/10 px-3.5 py-1.5">
-            <span className="h-[7px] w-[7px] animate-pulse-ring rounded-full bg-teal-bright" />
-            <span className="text-xs font-medium tracking-[0.02em] text-teal-bright">
+          <div className="mb-7 inline-flex items-center gap-2.5 rounded-full border border-teal/25 bg-teal/10 px-3.5 py-1.5">
+            <span className="h-[7px] w-[7px] animate-pulse-ring rounded-full bg-teal" />
+            <span className="text-xs font-medium tracking-[0.02em] text-teal">
               Alignify for Sales · Now in beta
             </span>
           </div>
 
           <h1 className="mb-5 font-display text-[clamp(40px,5.8vw,72px)] font-bold leading-[1.02] tracking-[-0.025em] text-white">
             Selling is easier when you{' '}
-            <span className="text-teal-bright">know your prospect.</span>
+            <span className="text-teal">know your prospect.</span>
           </h1>
 
           <p className="mb-9 max-w-[500px] text-[18px] leading-[1.55] text-white/70">
@@ -36,7 +36,7 @@ export default function Hero() {
           <div className="mb-10 flex flex-wrap gap-3.5">
             <Link
               href="#final-cta"
-              className="btn-lg bg-teal text-white hover:bg-teal-bright"
+              className="btn-lg bg-teal text-white hover:opacity-90"
             >
               Get Early Access
             </Link>
@@ -52,7 +52,7 @@ export default function Hero() {
             <div className="flex">
               {(
                 [
-                  ['SJ', 'linear-gradient(135deg,#21a89f,#3eccc4)'],
+                  ['SJ', 'linear-gradient(135deg,#21a89f,#21a89f)'],
                   ['MT', 'linear-gradient(135deg,#6b7388,#3a4460)'],
                   ['RN', 'linear-gradient(135deg,#8b94aa,#21a89f)'],
                 ] as const
@@ -79,7 +79,7 @@ export default function Hero() {
           </HeroChip>
           <HeroChip
             pos="bottom-10 right-[-30px]"
-            dotClass="bg-teal-bright animate-pulse-chip"
+            dotClass="bg-teal animate-pulse-chip"
           >
             High-probability call
           </HeroChip>
@@ -117,7 +117,7 @@ function HeroNetwork() {
       preserveAspectRatio="xMidYMid slice"
       aria-hidden="true"
     >
-      <g stroke="#3eccc4" strokeWidth="0.7" fill="none" opacity="0.5">
+      <g stroke="#21a89f" strokeWidth="0.7" fill="none" opacity="0.5">
         <line x1="80" y1="120" x2="260" y2="70" />
         <line x1="260" y1="70" x2="400" y2="180" />
         <line x1="80" y1="120" x2="400" y2="180" />
@@ -127,7 +127,7 @@ function HeroNetwork() {
         <line x1="60" y1="500" x2="220" y2="590" />
         <line x1="220" y1="590" x2="360" y2="520" />
       </g>
-      <g fill="#3eccc4" opacity="0.65">
+      <g fill="#21a89f" opacity="0.65">
         {[
           [80, 120],
           [260, 70],

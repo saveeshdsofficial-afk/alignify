@@ -37,7 +37,7 @@ const MentorIcon = (
 const PRODUCTS: Product[] = [
   {
     status: 'available',
-    title: (<>Alignify for <span className="text-teal-bright">Sales</span></>),
+    title: (<>Alignify for <span className="text-teal">Sales</span></>),
     desc: 'Know your prospect before you reach out. Validate fit, adapt your pitch, and turn cold calls into aligned conversations.',
     features: [
       'Prospect alignment scoring',
@@ -124,7 +124,7 @@ function ProductCard({ product }: { product: Product }) {
         <div
           className={`mb-5 flex h-[54px] w-[54px] items-center justify-center rounded-xl border ${
             live
-              ? 'border-teal-bright/30 bg-teal-bright/15 text-teal-bright'
+              ? 'border-teal/30 bg-teal/15 text-teal'
               : 'border-teal-pale bg-teal-tint text-teal'
           }`}
         >
@@ -157,7 +157,7 @@ function ProductCard({ product }: { product: Product }) {
             >
               <span
                 className={`absolute left-0 top-3.5 h-0.5 w-3 rounded-sm ${
-                  live ? 'bg-teal-bright' : 'bg-teal'
+                  live ? 'bg-teal' : 'bg-teal'
                 }`}
               />
               {f}
@@ -169,7 +169,7 @@ function ProductCard({ product }: { product: Product }) {
           href="#final-cta"
           className={
             live
-              ? 'inline-flex items-center gap-2 rounded-lg bg-teal-bright px-4 py-2.5 text-sm font-semibold text-graphite transition-all hover:gap-3 hover:bg-white'
+              ? 'inline-flex items-center gap-2 rounded-lg bg-teal px-4 py-2.5 text-sm font-semibold text-white transition-all hover:gap-3 hover:bg-white hover:text-graphite'
               : 'inline-flex items-center gap-2 text-sm font-semibold text-slate transition-all hover:gap-3 hover:text-teal'
           }
         >
@@ -186,7 +186,7 @@ function ProductBadge({ status }: { status: 'available' | 'soon' }) {
     <div
       className={`mb-4 inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.2em] ${
         isLive
-          ? 'bg-teal-bright text-graphite'
+          ? 'bg-teal text-white'
           : 'border border-line bg-canvas-soft text-slate'
       }`}
     >

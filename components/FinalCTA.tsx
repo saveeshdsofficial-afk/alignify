@@ -15,13 +15,13 @@ export default function FinalCTA() {
 
           <div className="relative z-[1] grid grid-cols-1 items-center gap-10 text-white md:grid-cols-[1.05fr_1fr] md:gap-14">
             <div>
-              <div className="mb-5 inline-flex items-center gap-2.5 rounded-full border border-teal-bright/30 bg-teal-bright/10 px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-[0.2em] text-teal-bright">
-                <span className="h-1.5 w-1.5 animate-pulse-chip rounded-full bg-teal-bright" />
+              <div className="mb-5 inline-flex items-center gap-2.5 rounded-full border border-teal/30 bg-teal/10 px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-[0.2em] text-teal">
+                <span className="h-1.5 w-1.5 animate-pulse-chip rounded-full bg-teal" />
                 Early Access
               </div>
               <h2 className="mb-4 font-display text-[clamp(32px,4.4vw,50px)] font-bold leading-[1.05] tracking-[-0.025em] text-white">
                 Ready to align your{' '}
-                <span className="text-teal-bright">sales pipeline?</span>
+                <span className="text-teal">sales pipeline?</span>
               </h2>
               <p className="mb-7 max-w-[460px] text-[17px] leading-[1.55] text-white/75">
                 Drop your details and get early access to Alignify for Sales. Start validating
@@ -43,11 +43,11 @@ export default function FinalCTA() {
                         stroke="currentColor"
                         strokeWidth={2}
                         strokeLinecap="round"
-                        className="flex-shrink-0 text-teal-bright"
+                        className="flex-shrink-0 text-teal"
                       >
                         <path d="M2 7 L6 11 L12 3" />
                       </svg>
-                      <strong className="font-bold text-teal-bright">{first}</strong>{' '}
+                      <strong className="font-bold text-teal">{first}</strong>{' '}
                       {rest.join(' ')}
                     </span>
                   )
@@ -71,9 +71,9 @@ function CtaDecoTR() {
       fill="none"
       aria-hidden="true"
     >
-      <circle cx="100" cy="100" r="80" stroke="#3eccc4" strokeWidth="1" opacity="0.3" />
-      <circle cx="100" cy="100" r="55" stroke="#3eccc4" strokeWidth="1" opacity="0.4" strokeDasharray="3 3" />
-      <circle cx="100" cy="100" r="30" fill="#3eccc4" opacity="0.15" />
+      <circle cx="100" cy="100" r="80" stroke="#21a89f" strokeWidth="1" opacity="0.3" />
+      <circle cx="100" cy="100" r="55" stroke="#21a89f" strokeWidth="1" opacity="0.4" strokeDasharray="3 3" />
+      <circle cx="100" cy="100" r="30" fill="#21a89f" opacity="0.15" />
     </svg>
   )
 }
@@ -86,14 +86,14 @@ function CtaDecoBL() {
       fill="none"
       aria-hidden="true"
     >
-      <g stroke="#3eccc4" strokeWidth="1" opacity="0.4">
+      <g stroke="#21a89f" strokeWidth="1" opacity="0.4">
         <line x1="40" y1="120" x2="100" y2="80" />
         <line x1="100" y1="80" x2="160" y2="130" />
         <line x1="40" y1="120" x2="160" y2="130" />
         <line x1="100" y1="80" x2="120" y2="30" />
         <line x1="160" y1="130" x2="120" y2="30" />
       </g>
-      <g fill="#3eccc4">
+      <g fill="#21a89f">
         <circle cx="40" cy="120" r="4" />
         <circle cx="100" cy="80" r="4" />
         <circle cx="160" cy="130" r="4" />

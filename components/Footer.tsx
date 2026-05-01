@@ -26,7 +26,7 @@ export default function Footer() {
             </span>
             <Link
               href="mailto:hello@alignify.io"
-              className="flex items-center gap-2.5 text-sm text-white/75 no-underline transition-colors hover:text-teal-bright"
+              className="flex items-center gap-2.5 text-sm text-white/75 no-underline transition-colors hover:text-teal"
             >
               <MailIcon />
               hello@alignify.io
@@ -51,7 +51,7 @@ export default function Footer() {
 
 function MailIcon() {
   return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" className="flex-shrink-0 text-teal-bright">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" className="flex-shrink-0 text-teal">
       <rect x="3" y="5" width="18" height="14" rx="2" />
       <path d="M3 7 L12 13 L21 7" />
     </svg>
@@ -60,7 +60,7 @@ function MailIcon() {
 
 function PinIcon() {
   return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" className="flex-shrink-0 text-teal-bright">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" className="flex-shrink-0 text-teal">
       <path d="M12 2 C 7 2 4 6 4 11 C 4 17 12 22 12 22 C 12 22 20 17 20 11 C 20 6 17 2 12 2 Z" />
       <circle cx="12" cy="11" r="3" />
     </svg>

@@ -51,11 +51,11 @@ export default function ProspectCard() {
         </div>
 
         <div className="flex gap-2.5 rounded-[10px] bg-graphite p-4 text-[13px] leading-[1.5] text-white">
-          <div className="flex h-[22px] w-[22px] flex-shrink-0 items-center justify-center rounded-full bg-teal-bright text-[13px] font-bold text-graphite">
+          <div className="flex h-[22px] w-[22px] flex-shrink-0 items-center justify-center rounded-full bg-teal text-[13px] font-bold text-white">
             !
           </div>
           <div>
-            Lead with <strong className="font-semibold text-teal-bright">metrics and ROI</strong>.
+            Lead with <strong className="font-semibold text-teal">metrics and ROI</strong>.
             Skip small talk, reference concrete outcomes in the first 60 seconds.
           </div>
         </div>
