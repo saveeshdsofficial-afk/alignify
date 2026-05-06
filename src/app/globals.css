@@ -420,9 +420,11 @@ h1.hero-title .it {
 .problem-num {
   font-family: var(--font-display); font-weight: 700;
   font-size: 60px; letter-spacing: -0.04em; line-height: 1;
-  color: transparent; -webkit-text-stroke: 1.5px var(--teal-bright);
+  background: linear-gradient(180deg, var(--teal-bright), var(--teal));
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 30px rgba(62, 204, 196, 0.5);
   margin-bottom: 22px;
-  text-shadow: 0 0 30px rgba(62, 204, 196, 0.3);
 }
 .problem-card h3 {
   font-family: var(--font-display); font-weight: 700;
