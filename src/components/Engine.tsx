@@ -16,7 +16,7 @@ const BARS = [
 
 export default function Engine() {
   return (
-    <section className="engine" id="engine">
+    <section className="engine section section-light" id="engine">
       <div className="frame engine-grid">
         <div className="engine-copy">
           <span className="label">The Engine</span>
