@@ -5,6 +5,7 @@ import { useState, type FormEvent } from 'react'
 export default function FinalCTA() {
   const [done, setDone] = useState(false)
   const [email, setEmail] = useState('')
+  const [company, setCompany] = useState('')
   const [size, setSize] = useState('')
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
@@ -13,33 +14,45 @@ export default function FinalCTA() {
     setTimeout(() => {
       setDone(false)
       setEmail('')
+      setCompany('')
       setSize('')
-    }, 4500)
+    }, 5000)
   }
 
   return (
-    <section className="cta-section" id="final-cta" style={{ paddingTop: 100 }}>
+    <section className="section" id="cta">
       <div className="frame">
         <div className="cta-card">
           <div className="cta-inner">
             <div>
-              <span className="label" style={{ marginBottom: 18, display: 'inline-block' }}>
-                Early Access
-              </span>
-              <h2>Ready to align your <span className="it">sales for success!</span></h2>
+              <div className="cta-eyebrow">
+                <span className="label">Request a Demo</span>
+              </div>
+              <h2 className="cta-h">
+                Align your <br />
+                <span className="it">sales pipeline.</span>
+              </h2>
               <p className="cta-deck">
-                Drop your details and get early access to Alignify Sales. Start validating prospects and closing more of the calls that matter.
+                Drop your details and our team will reach out within one business day to schedule your personalised demo.
               </p>
-              <div className="cta-pills">
-                <span className="cta-pill"><strong>Beta</strong>&nbsp;rolling out this quarter</span>
-                <span className="cta-pill"><strong>Free</strong>&nbsp;during beta</span>
-                <span className="cta-pill"><strong>Founding</strong>&nbsp;pricing locked</span>
+              <div className="cta-proof">
+                <div className="cta-proof-avs">
+                  <div className="av">SJ</div>
+                  <div className="av">MT</div>
+                  <div className="av">RN</div>
+                </div>
+                <div className="cta-proof-text">
+                  <strong>200+ revenue leaders</strong> already on the platform
+                </div>
               </div>
             </div>
 
             <form className="cta-form" onSubmit={handleSubmit}>
-              <h3 className="form-h">Get <span className="it">early access</span></h3>
-              <p className="form-sub">We&apos;ll email when your seat is ready.</p>
+              <h3 className="form-h">
+                Book your <span className="it">demo</span>
+              </h3>
+              <p className="form-sub">We&apos;ll be in touch within one business day.</p>
+
               <div className="form-field">
                 <label htmlFor="email-input">Work email</label>
                 <input
@@ -53,6 +66,17 @@ export default function FinalCTA() {
                 />
               </div>
               <div className="form-field">
+                <label htmlFor="company-input">Company</label>
+                <input
+                  type="text"
+                  id="company-input"
+                  placeholder="Acme Corp"
+                  disabled={done}
+                  value={company}
+                  onChange={(e) => setCompany(e.target.value)}
+                />
+              </div>
+              <div className="form-field">
                 <label htmlFor="size-input">Team size</label>
                 <select
                   id="size-input"
@@ -61,17 +85,19 @@ export default function FinalCTA() {
                   value={size}
                   onChange={(e) => setSize(e.target.value)}
                 >
-                  <option value="">Select</option>
-                  <option>1–10 reps</option>
-                  <option>11–50 reps</option>
-                  <option>51–200 reps</option>
-                  <option>200+ reps</option>
+                  <option value="">Select team size</option>
+                  <option>1–10 sales reps</option>
+                  <option>11–50 sales reps</option>
+                  <option>51–200 sales reps</option>
+                  <option>200+ sales reps</option>
                 </select>
               </div>
               <button type="submit" className="form-btn" disabled={done}>
-                {done ? '✓ Seat claimed — check your inbox' : <>Claim my seat <span aria-hidden>→</span></>}
+                {done ? '✓ Demo requested — we’ll be in touch' : 'Request a Team Demo'}
               </button>
-              <div className="form-foot">No credit card · Founding pricing</div>
+              <div className="form-foot">
+                No pricing discussions on the first call — just alignment.
+              </div>
             </form>
           </div>
         </div>

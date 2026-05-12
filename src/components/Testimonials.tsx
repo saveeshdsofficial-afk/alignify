@@ -1,38 +1,38 @@
 import type { ReactNode } from 'react'
 
 interface Testimonial {
-  logo: string
+  company: string
   quote: ReactNode
   initials: string
-  avatarClass: 'a1' | 'a2' | 'a3'
+  avClass: 'a1' | 'a2' | 'a3'
   name: string
   role: string
 }
 
 const TESTIMONIALS: Testimonial[] = [
   {
-    logo: 'Innosystems',
-    quote: <>&quot;Reply rates <span className="em">doubled</span> in the first month. Cold calls finally feel warm.&quot;</>,
-    initials: 'SJ',
-    avatarClass: 'a1',
-    name: 'Sarah Jenkins',
-    role: 'Head of Sales',
-  },
-  {
-    logo: 'Quartix',
-    quote: <>&quot;The first <span className="em">five minutes</span> of every call changed. We walk in already aligned.&quot;</>,
+    company: 'Quartix',
+    quote: <>&quot;The first <span className="em">five minutes</span> of every call changed. We walk in aligned — every time.&quot;</>,
     initials: 'MT',
-    avatarClass: 'a2',
+    avClass: 'a2',
     name: 'Marcus Thorne',
-    role: 'VP Revenue',
+    role: 'VP Revenue · Quartix',
   },
   {
-    logo: 'Meridian',
-    quote: <>&quot;Cut call-to-close time by <span className="em">30%</span>. Every meeting starts with real context.&quot;</>,
+    company: 'Meridian',
+    quote: <>&quot;Cut our call-to-close time by <span className="em">30%.</span> Every meeting starts with real context and a clear play.&quot;</>,
     initials: 'RN',
-    avatarClass: 'a3',
+    avClass: 'a3',
     name: 'Rhea Nakamura',
-    role: 'CRO',
+    role: 'CRO · Meridian Labs',
+  },
+  {
+    company: 'Latchwork',
+    quote: <>&quot;Replaced three tools and a spreadsheet. <span className="em">One source of truth</span> for our entire revenue pipeline.&quot;</>,
+    initials: 'DO',
+    avClass: 'a1',
+    name: 'Daniel Okafor',
+    role: 'VP Sales · Latchwork',
   },
 ]
 
@@ -46,27 +46,46 @@ function Star() {
 
 export default function Testimonials() {
   return (
-    <section className="section">
+    <section className="section section-alt">
       <div className="frame">
         <div className="section-head centered">
-          <span className="label">From the field</span>
-          <h2>Trusted by <span className="it">revenue leaders.</span></h2>
+          <span className="label">From the Field</span>
+          <h2 className="section-h">
+            Trusted by <span className="it">revenue leaders.</span>
+          </h2>
         </div>
+
+        <div className="glass test-pull" style={{ marginBottom: 22 }}>
+          <div className="qmark">&ldquo;</div>
+          <div className="pull-body">
+            <p className="pull-quote">
+              We stopped guessing about buyers. Reply rates <span className="em">doubled</span> in the first month — and the calls we did take started landing on the first try.
+            </p>
+            <div className="pull-author">
+              <div className="pull-avatar">SJ</div>
+              <div>
+                <div className="pull-meta-name">Sarah Jenkins</div>
+                <div className="pull-meta-role">Head of Sales · Innosystems</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="test-grid">
           {TESTIMONIALS.map((t) => (
-            <div key={t.name} className="tcard">
+            <div key={t.name} className="glass tcard">
               <div className="tcard-top">
                 <div className="tcard-stars">
                   {Array.from({ length: 5 }).map((_, i) => <Star key={i} />)}
                 </div>
-                <div className="tcard-logo">{t.logo}</div>
+                <div className="tcard-co">{t.company}</div>
               </div>
-              <p className="tquote">{t.quote}</p>
-              <div className="tauthor">
-                <div className={`tavatar ${t.avatarClass}`}>{t.initials}</div>
+              <p className="quote">{t.quote}</p>
+              <div className="tcard-author">
+                <div className={`tcard-av ${t.avClass}`}>{t.initials}</div>
                 <div>
-                  <div className="tname">{t.name}</div>
-                  <div className="trole">{t.role}</div>
+                  <div className="tcard-name">{t.name}</div>
+                  <div className="tcard-role">{t.role}</div>
                 </div>
               </div>
             </div>

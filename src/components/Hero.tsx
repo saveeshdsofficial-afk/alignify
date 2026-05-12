@@ -22,8 +22,8 @@ function HeroCopy() {
       </div>
 
       <h1 className="hero-title">
-        Higher win ratios. <br />
-        <span className="it">Confident sales calls.</span>
+        <span style={{ whiteSpace: 'nowrap' }}>Know your buyer</span> <br />
+        <span className="it">before you say a word.</span>
       </h1>
 
       <p className="hero-sub">
@@ -38,8 +38,8 @@ function HeroCopy() {
       </div>
 
       <div className="hero-actions">
-        <a href="#final-cta" className="btn-glow">Request a Team Demo</a>
-        <a href="#final-cta" className="btn-ghost">Profile Your First Lead</a>
+        <a href="#cta" className="btn-glow">Request a Team Demo</a>
+        <a href="#cta" className="btn-ghost">Profile Your First Lead</a>
       </div>
     </div>
   )
@@ -65,13 +65,7 @@ function AlignmentEngine() {
       <div className="ring-decor r2" />
       <WheelOuter />
       <WheelQuadrants />
-      <WheelInner />
-      <RadarSweep />
       <Hub />
-      <AccuracyBadge />
-      <ConfidenceWidget />
-      <WinRatioWidget />
-      <CommWidget />
     </div>
   )
 }
@@ -163,22 +157,11 @@ function WheelQuadrants() {
         <path d="M 0 0 L 0 140 A 140 140 0 0 1 -140 0 Z" fill="url(#qFill3)" stroke="rgba(125,221,216,0.4)" strokeWidth="1" />
         <path d="M 0 0 L -140 0 A 140 140 0 0 1 0 -140 Z" fill="url(#qFill4)" stroke="rgba(46,57,80,0.6)" strokeWidth="1" />
 
-        <g fontFamily="Inter, sans-serif" textAnchor="middle">
-          {/* Top-right: Win Ratio */}
-          <text x="72" y="-80" fill="#3eccc4" fontSize="22" fontWeight="700" letterSpacing="-0.02em">+34%</text>
-          <text x="72" y="-62" fill="#8a93ab" fontSize="8" fontWeight="700" letterSpacing="2.2">WIN RATIO</text>
-
-          {/* Bottom-right: Confidence */}
-          <text x="72" y="68" fill="#3eccc4" fontSize="22" fontWeight="700" letterSpacing="-0.02em">9.2</text>
-          <text x="72" y="86" fill="#8a93ab" fontSize="8" fontWeight="700" letterSpacing="2.2">CONFIDENCE</text>
-
-          {/* Bottom-left: Accuracy */}
-          <text x="-72" y="68" fill="#7dddd8" fontSize="22" fontWeight="700" letterSpacing="-0.02em">85%</text>
-          <text x="-72" y="86" fill="#8a93ab" fontSize="8" fontWeight="700" letterSpacing="2.2">ACCURACY</text>
-
-          {/* Top-left: Pitch Time */}
-          <text x="-72" y="-80" fill="#3eccc4" fontSize="22" fontWeight="700" letterSpacing="-0.02em">3×</text>
-          <text x="-72" y="-62" fill="#8a93ab" fontSize="8" fontWeight="700" letterSpacing="2.2">PITCH TIME</text>
+        <g fontFamily="Inter, sans-serif" fontSize="10" fontWeight="700" letterSpacing="1.8" textAnchor="middle">
+          <text x="-72" y="-72" fill="#8a93ab">PERSONALITY</text>
+          <text x="72" y="-72" fill="#3eccc4">COMPATIBILITY</text>
+          <text x="-72" y="78" fill="#7dddd8">COMPLEMENTARY</text>
+          <text x="72" y="78" fill="#3eccc4">ALIGNMENT</text>
         </g>
 
         <g stroke="rgba(62,204,196,0.3)" strokeWidth="0.8" strokeDasharray="3 3">
@@ -190,173 +173,13 @@ function WheelQuadrants() {
   )
 }
 
-function WheelInner() {
-  const ticks = [
-    [0, -92, 0, -86],
-    [23.8, -88.9, 22.3, -83.1],
-    [46, -79.7, 43, -74.5],
-    [65.1, -65.1, 60.9, -60.9],
-    [79.7, -46, 74.5, -43],
-    [88.9, -23.8, 83.1, -22.3],
-    [92, 0, 86, 0],
-    [88.9, 23.8, 83.1, 22.3],
-    [79.7, 46, 74.5, 43],
-    [65.1, 65.1, 60.9, 60.9],
-    [46, 79.7, 43, 74.5],
-    [23.8, 88.9, 22.3, 83.1],
-    [0, 92, 0, 86],
-    [-23.8, 88.9, -22.3, 83.1],
-    [-46, 79.7, -43, 74.5],
-    [-65.1, 65.1, -60.9, 60.9],
-    [-79.7, 46, -74.5, 43],
-    [-88.9, 23.8, -83.1, 22.3],
-    [-92, 0, -86, 0],
-    [-88.9, -23.8, -83.1, -22.3],
-    [-79.7, -46, -74.5, -43],
-    [-65.1, -65.1, -60.9, -60.9],
-    [-46, -79.7, -43, -74.5],
-    [-23.8, -88.9, -22.3, -83.1],
-  ]
-  return (
-    <div className="wheel-inner">
-      <svg viewBox="-100 -100 200 200" fill="none">
-        <circle cx="0" cy="0" r="92" stroke="rgba(62,204,196,0.25)" strokeWidth="0.8" fill="none" />
-        <g stroke="#3eccc4" strokeWidth="0.8" opacity="0.5">
-          {ticks.map(([x1, y1, x2, y2], i) => (
-            <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} />
-          ))}
-        </g>
-      </svg>
-    </div>
-  )
-}
-
-function RadarSweep() {
-  return (
-    <div className="radar-sweep">
-      <svg viewBox="-100 -100 200 200" fill="none">
-        <defs>
-          <linearGradient id="sweepGrad" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stopColor="#3eccc4" stopOpacity="0" />
-            <stop offset="80%" stopColor="#3eccc4" stopOpacity="0.4" />
-            <stop offset="100%" stopColor="#3eccc4" stopOpacity="0.9" />
-          </linearGradient>
-        </defs>
-        <path d="M 0 0 L 92 0 A 92 92 0 0 0 65.05 -65.05 Z" fill="url(#sweepGrad)" opacity="0.5" />
-      </svg>
-    </div>
-  )
-}
-
 function Hub() {
   return (
     <div className="hub">
       <div className="hub-disc" />
-      <svg viewBox="0 0 40 40">
-        <use href="#alignify-mark" />
-      </svg>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src="/alignify-logo-light.png" alt="Alignify" className="hub-mark" />
     </div>
   )
 }
 
-function AccuracyBadge() {
-  return (
-    <div className="accuracy-badge">
-      <div className="ab-row">
-        <div className="ab-icon">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M2 8 L6 12 L14 4" />
-          </svg>
-        </div>
-        <div className="ab-divider" />
-        <div className="ab-num">
-          85<span style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.6em' }}>%</span>
-        </div>
-        <div className="ab-meta">
-          <span className="ab-k">Engine Accuracy</span>
-          <span className="ab-v">DISC validated</span>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-function ConfidenceWidget() {
-  return (
-    <div className="widget widget-confidence">
-      <div className="widget-head">
-        <span className="widget-tag">
-          <span className="num">W01</span>
-          Confidence Score
-        </span>
-        <span className="widget-status">Live</span>
-      </div>
-      <div className="conf-row">
-        <div className="conf-num">
-          92<span className="pct">%</span>
-        </div>
-        <div className="conf-bar" />
-        <div className="conf-meta">High-fit profile · proceed to outreach</div>
-      </div>
-    </div>
-  )
-}
-
-function WinRatioWidget() {
-  return (
-    <div className="widget widget-winratio">
-      <div className="widget-head">
-        <span className="widget-tag">
-          <span className="num">W02</span>
-          Win Ratio
-        </span>
-        <span className="widget-status">Q3</span>
-      </div>
-      <div className="wr-row">
-        <div className="wr-gauge">
-          <svg viewBox="0 0 64 64">
-            <circle cx="32" cy="32" r="26" stroke="rgba(255,255,255,0.08)" strokeWidth="5" fill="none" />
-            <circle
-              cx="32"
-              cy="32"
-              r="26"
-              stroke="#3eccc4"
-              strokeWidth="5"
-              fill="none"
-              strokeDasharray="163.4"
-              strokeDashoffset="55.5"
-              strokeLinecap="round"
-            />
-          </svg>
-          <div className="wr-gauge-text">66%</div>
-        </div>
-        <div className="wr-meta">
-          <span className="wr-label">Closed-Won</span>
-          <span className="wr-value">66 of 100 deals</span>
-          <span className="wr-delta">▲ +18 vs last quarter</span>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-function CommWidget() {
-  return (
-    <div className="widget widget-comm">
-      <div className="comm-row">
-        <div className="comm-icon">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
-            <rect x="2" y="3" width="12" height="9" rx="1.5" />
-            <path d="M2 6 L14 6" />
-          </svg>
-        </div>
-        <div className="comm-meta">
-          <span className="comm-k">Comm Style</span>
-          <span className="comm-v">
-            Analytical · <span className="accent">Direct</span>
-          </span>
-        </div>
-      </div>
-    </div>
-  )
-}

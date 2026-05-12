@@ -4,6 +4,7 @@ import type { CSSProperties, MouseEvent, ReactNode } from 'react'
 
 interface ProblemItem {
   num: string
+  tag: string
   title: string
   body: string
   metric: string
@@ -14,42 +15,30 @@ interface ProblemItem {
 const PROBLEMS: ProblemItem[] = [
   {
     num: '01',
+    tag: 'Symptom A',
     title: 'Misalignment',
-    body:
-      "Pitching the same way to every buyer ignores how the prospect makes decisions. Reps lean on instinct instead of structured insights — Alignify delivers the competitive edge.",
+    body: 'Pitching the wrong message to the wrong buyer. Reps lean on instinct instead of structured signal — and prospects disengage before the value ever lands.',
     metric: '68',
     unit: '%',
-    label: (
-      <>
-        Sales lost to<br />misalignment
-      </>
-    ),
+    label: <>Calls lost to<br />poor buyer fit</>,
   },
   {
     num: '02',
+    tag: 'Symptom B',
     title: 'Inefficiency',
-    body:
-      "Hours burn on prospects because the sales pitch isn't structured or aligned to the buyer's personality. Alignify changes that.",
-    metric: '65',
+    body: 'Hours burned on unqualified prospects, mis-sequenced outreach, and handoffs with zero context. The pipeline fills with noise instead of signal.',
+    metric: '31',
     unit: '%',
-    label: (
-      <>
-        Rep time on<br />lost deals
-      </>
-    ),
+    label: <>Rep time spent<br />on dead leads</>,
   },
   {
     num: '03',
-    title: 'Lost Opportunity Cost',
-    body:
-      'Every misaligned conversation carries a cost — rep time, leadership attention, and eroded pipeline confidence add up across the year.',
-    metric: '$65',
+    tag: 'Symptom C',
+    title: 'Cost Implications',
+    body: 'Every unqualified conversation carries a real cost — rep salary, tooling, leadership attention. Over a quarter, the revenue drag compounds significantly.',
+    metric: '$42',
     unit: 'k',
-    label: (
-      <>
-        Lost opportunity<br />cost (p.a.)
-      </>
-    ),
+    label: <>Avg quarterly<br />drag per rep</>,
   },
 ]
 
@@ -63,31 +52,36 @@ export default function Problem() {
   }
 
   return (
-    <section className="section">
+    <section className="section problem-section" style={{ paddingTop: 0 }}>
       <div className="frame">
         <div className="section-head">
           <span className="label">The Problem</span>
-          <h2>The cost of <span className="it">cold-calling.</span></h2>
-          <p>
-            Misread the buyer and the deal is lost before it starts. <strong>Win more deals with Alignify</strong> — every conversation grounded in how your prospect actually thinks.
+          <h2 className="section-h">
+            The cost of <span className="it">cold-calling.</span>
+          </h2>
+          <p className="section-deck">
+            A lack of real understanding of your prospect doesn&apos;t just waste time and resources — <strong>it erodes revenue.</strong> Alignify ensures every validated prospect leads to an aligned, high-probability sales call.
           </p>
         </div>
         <div className="problem-grid">
           {PROBLEMS.map((p) => (
             <article
               key={p.num}
-              className="problem-card"
+              className="glass prob-card"
               onMouseMove={handleMove}
-              style={{ ['--mx' as string]: '50%', ['--my' as string]: '0%' } as CSSProperties}
+              style={{ ['--mx' as string]: '50%', ['--my' as string]: '30%' } as CSSProperties}
             >
-              <div className="problem-num">{p.num}</div>
+              <div className="prob-num">
+                {p.num}
+                <span className="tag">{p.tag}</span>
+              </div>
               <h3>{p.title}</h3>
               <p>{p.body}</p>
-              <div className="problem-metric">
-                <div className="problem-metric-num">
+              <div className="prob-metric">
+                <div className="prob-metric-num">
                   {p.metric}<span className="u">{p.unit}</span>
                 </div>
-                <div className="problem-metric-lbl">{p.label}</div>
+                <div className="prob-metric-lbl">{p.label}</div>
               </div>
             </article>
           ))}

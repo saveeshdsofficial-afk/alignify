@@ -3,16 +3,17 @@ export default function Navbar() {
     <nav>
       <div className="frame nav-inner">
         <a href="#" className="brand">
-          <svg className="brand-mark" viewBox="0 0 40 40">
-            <use href="#alignify-mark" />
-          </svg>
-          <span className="brand-word">alignify</span>
-          <span className="brand-divider" />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/alignify-logo-light.png" alt="Alignify" className="brand-mark" />
           <span className="head-product">sales</span>
         </a>
-        <a href="#final-cta" className="nav-cta">
-          Get Started
-        </a>
+        <div className="nav-actions">
+          <span className="nav-status">
+            <span className="dot" />
+            Engine online · 85% accuracy
+          </span>
+          <a href="#cta" className="nav-cta">Request a Team Demo</a>
+        </div>
       </div>
     </nav>
   )

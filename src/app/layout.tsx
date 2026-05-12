@@ -24,8 +24,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body suppressHydrationWarning>
-        <div className="ambient-orb o1" aria-hidden />
-        <div className="ambient-orb o2" aria-hidden />
+        <div className="orb orb-1" aria-hidden />
+        <div className="orb orb-2" aria-hidden />
         {children}
       </body>
     </html>
