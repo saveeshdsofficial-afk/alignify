@@ -98,16 +98,22 @@ nav {
   backdrop-filter: blur(20px) saturate(140%);
   border-bottom: 1px solid var(--line);
 }
-.nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; }
+.nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 6px 0; }
+.nav-inner .brand-mark {
+  width: 140px !important;
+  height: 140px !important;
+  min-width: 140px; min-height: 140px;
+  max-width: 140px; max-height: 140px;
+}
 .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; }
 img.brand-mark,
 .brand .brand-mark {
-  width: 80px !important;
-  height: 80px !important;
-  min-width: 80px;
-  min-height: 80px;
-  max-width: 80px;
-  max-height: 80px;
+  width: 120px !important;
+  height: 120px !important;
+  min-width: 120px;
+  min-height: 120px;
+  max-width: 120px;
+  max-height: 120px;
   flex-shrink: 0;
   display: block;
   object-fit: contain;
