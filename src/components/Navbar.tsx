@@ -5,7 +5,6 @@ export default function Navbar() {
         <a href="#" className="brand">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/alignify-logo-light.png" alt="Alignify" className="brand-mark" />
-          <span className="head-product">sales</span>
         </a>
         <div className="nav-actions">
           <span className="nav-status">
