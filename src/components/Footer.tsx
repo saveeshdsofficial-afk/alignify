@@ -19,10 +19,10 @@ export default function Footer() {
             <span className="label">Product</span>
             <a href="#products">Sales</a>
             <a href="#products">
-              Recruitment <span style={{ color: 'var(--slate-soft)', fontSize: 11 }}>· soon</span>
+              Recruitment <span style={{ color: 'var(--slate-soft)', fontSize: 11 }}>· Coming Soon</span>
             </a>
             <a href="#products">
-              Mentor <span style={{ color: 'var(--slate-soft)', fontSize: 11 }}>· soon</span>
+              Mentor <span style={{ color: 'var(--slate-soft)', fontSize: 11 }}>· Coming Soon</span>
             </a>
           </div>
         </div>
