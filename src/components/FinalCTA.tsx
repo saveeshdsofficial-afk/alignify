@@ -48,6 +48,10 @@ export default function FinalCTA() {
             </div>
 
             <form className="cta-form" onSubmit={handleSubmit}>
+              <span className="corner tl" />
+              <span className="corner tr" />
+              <span className="corner bl" />
+              <span className="corner br" />
               <h3 className="form-h">
                 Book your <span className="it">demo</span>
               </h3>
