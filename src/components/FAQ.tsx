@@ -30,7 +30,7 @@ const QAS: QA[] = [
 
 export default function FAQ() {
   return (
-    <section className="section section-alt">
+    <section className="section section-alt faq-section">
       <div className="frame">
         <div className="faq-wrap">
           <div className="faq-head">
@@ -44,7 +44,6 @@ export default function FAQ() {
             {QAS.map((f, i) => (
               <details key={i} className="qa" open={f.open}>
                 <summary>
-                  <span className="qn">Q.{String(i + 1).padStart(2, '0')}</span>
                   <span className="qt">{f.q}</span>
                   <span className="qx">+</span>
                 </summary>

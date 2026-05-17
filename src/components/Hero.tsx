@@ -14,11 +14,7 @@ function HeroCopy() {
     <div>
       <div className="hero-path">
         <span className="live-dot" />
-        <span className="seg">alignify</span>
-        <span className="sep">/</span>
-        <span className="seg">platform</span>
-        <span className="sep">/</span>
-        <span className="seg active">sales-engine</span>
+        <span className="seg active">Intelligent Alignment</span>
       </div>
 
       <h1 className="hero-title">
@@ -39,7 +35,6 @@ function HeroCopy() {
 
       <div className="hero-actions">
         <a href="#cta" className="btn-glow">Request a Team Demo</a>
-        <a href="#cta" className="btn-ghost">Profile Your First Lead</a>
       </div>
     </div>
   )
@@ -150,6 +145,10 @@ function WheelQuadrants() {
             <stop offset="0%" stopColor="#2e3950" stopOpacity="0.45" />
             <stop offset="100%" stopColor="#2e3950" stopOpacity="0.1" />
           </radialGradient>
+          <path id="arc-nw" d="M -115,0 A 115,115 0 0,1 0,-115" fill="none" />
+          <path id="arc-ne" d="M 0,-115 A 115,115 0 0,1 115,0" fill="none" />
+          <path id="arc-se" d="M 115,0 A 115,115 0 0,1 0,115" fill="none" />
+          <path id="arc-sw" d="M -115,0 A 115,115 0 0,0 0,115" fill="none" />
         </defs>
 
         <path d="M 0 0 L 0 -140 A 140 140 0 0 1 140 0 Z" fill="url(#qFill1)" stroke="rgba(62,204,196,0.4)" strokeWidth="1" />
@@ -157,11 +156,19 @@ function WheelQuadrants() {
         <path d="M 0 0 L 0 140 A 140 140 0 0 1 -140 0 Z" fill="url(#qFill3)" stroke="rgba(125,221,216,0.4)" strokeWidth="1" />
         <path d="M 0 0 L -140 0 A 140 140 0 0 1 0 -140 Z" fill="url(#qFill4)" stroke="rgba(46,57,80,0.6)" strokeWidth="1" />
 
-        <g fontFamily="Inter, sans-serif" fontSize="10" fontWeight="700" letterSpacing="1.8" textAnchor="middle">
-          <text x="-72" y="-72" fill="#8a93ab">PERSONALITY</text>
-          <text x="72" y="-72" fill="#3eccc4">COMPATIBILITY</text>
-          <text x="-72" y="78" fill="#7dddd8">COMPLEMENTARY</text>
-          <text x="72" y="78" fill="#3eccc4">ALIGNMENT</text>
+        <g fontFamily="Inter, sans-serif" fontSize="10" fontWeight="700" letterSpacing="1.8" fill="#ffffff">
+          <text>
+            <textPath href="#arc-nw" startOffset="50%" textAnchor="middle">PERSONALITY</textPath>
+          </text>
+          <text>
+            <textPath href="#arc-ne" startOffset="50%" textAnchor="middle">COMPATIBILITY</textPath>
+          </text>
+          <text>
+            <textPath href="#arc-sw" startOffset="50%" textAnchor="middle">COMPLEMENTARY</textPath>
+          </text>
+          <text>
+            <textPath href="#arc-se" startOffset="50%" textAnchor="middle">ALIGNMENT</textPath>
+          </text>
         </g>
 
         <g stroke="rgba(62,204,196,0.3)" strokeWidth="0.8" strokeDasharray="3 3">

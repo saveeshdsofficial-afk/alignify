@@ -1,6 +1,5 @@
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
-import SectionMarker from '@/components/SectionMarker'
 import Problem from '@/components/Problem'
 import Pipeline from '@/components/Pipeline'
 import FinalCTA from '@/components/FinalCTA'
@@ -14,25 +13,12 @@ export default function HomePage() {
     <>
       <Navbar />
       <Hero />
-
-      <SectionMarker idx="// 01 — Problem" tag="Diagnostic" />
       <Problem />
-
-      <SectionMarker idx="// 02 — Pipeline" tag="Engine · Live" />
       <Pipeline />
-
-      <SectionMarker idx="// 03 — Platform" tag="Three products · One layer" />
       <Products />
-
-      <SectionMarker idx="// 04 — Field reports" tag="From the front line" />
       <Testimonials />
-
-      <SectionMarker idx="// 05 — Questions" tag="Common asks" />
       <FAQ />
-
-      <SectionMarker idx="// 06 — Request access" tag="Talk to the team" />
       <FinalCTA />
-
       <Footer />
     </>
   )

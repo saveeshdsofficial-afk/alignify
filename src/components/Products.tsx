@@ -79,7 +79,6 @@ export default function Products() {
                 </>
               )}
               <span className="pcard-pill">{p.pill}</span>
-              <div className="pcard-id">{p.id}</div>
               <h3>{p.title}</h3>
               <p>{p.body}</p>
               <ul className="pcard-feats">

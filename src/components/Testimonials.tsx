@@ -1,7 +1,6 @@
 import type { ReactNode } from 'react'
 
 interface Testimonial {
-  company: string
   quote: ReactNode
   initials: string
   avClass: 'a1' | 'a2' | 'a3'
@@ -11,7 +10,6 @@ interface Testimonial {
 
 const TESTIMONIALS: Testimonial[] = [
   {
-    company: 'Quartix',
     quote: <>&quot;The first <span className="em">five minutes</span> of every call changed. We walk in aligned — every time.&quot;</>,
     initials: 'MT',
     avClass: 'a2',
@@ -19,7 +17,6 @@ const TESTIMONIALS: Testimonial[] = [
     role: 'VP Revenue · Quartix',
   },
   {
-    company: 'Meridian',
     quote: <>&quot;Cut our call-to-close time by <span className="em">30%.</span> Every meeting starts with real context and a clear play.&quot;</>,
     initials: 'RN',
     avClass: 'a3',
@@ -27,7 +24,6 @@ const TESTIMONIALS: Testimonial[] = [
     role: 'CRO · Meridian Labs',
   },
   {
-    company: 'Latchwork',
     quote: <>&quot;Replaced three tools and a spreadsheet. <span className="em">One source of truth</span> for our entire revenue pipeline.&quot;</>,
     initials: 'DO',
     avClass: 'a1',
@@ -55,22 +51,6 @@ export default function Testimonials() {
           </h2>
         </div>
 
-        <div className="glass test-pull" style={{ marginBottom: 22 }}>
-          <div className="qmark">&ldquo;</div>
-          <div className="pull-body">
-            <p className="pull-quote">
-              We stopped guessing about buyers. Reply rates <span className="em">doubled</span> in the first month — and the calls we did take started landing on the first try.
-            </p>
-            <div className="pull-author">
-              <div className="pull-avatar">SJ</div>
-              <div>
-                <div className="pull-meta-name">Sarah Jenkins</div>
-                <div className="pull-meta-role">Head of Sales · Innosystems</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div className="test-grid">
           {TESTIMONIALS.map((t) => (
             <div key={t.name} className="glass tcard">
@@ -78,7 +58,6 @@ export default function Testimonials() {
                 <div className="tcard-stars">
                   {Array.from({ length: 5 }).map((_, i) => <Star key={i} />)}
                 </div>
-                <div className="tcard-co">{t.company}</div>
               </div>
               <p className="quote">{t.quote}</p>
               <div className="tcard-author">
