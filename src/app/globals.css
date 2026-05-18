@@ -127,20 +127,6 @@ img.brand-mark,
 .brand-divider { width: 1px; height: 18px; background: var(--line-strong); margin-left: 6px; }
 
 .nav-actions { display: flex; align-items: center; gap: 18px; }
-.nav-status {
-  display: inline-flex; align-items: center; gap: 10px;
-  padding: 7px 14px;
-  background: rgba(62, 204, 196, 0.08);
-  border: 1px solid var(--line-teal);
-  border-radius: 100px;
-  font-size: 12px; font-weight: 500; color: var(--teal-bright);
-  letter-spacing: 0.04em;
-}
-.nav-status .dot {
-  width: 6px; height: 6px; border-radius: 50%; background: var(--teal-bright);
-  box-shadow: 0 0 0 0 var(--teal-bright);
-  animation: pulse 2s infinite;
-}
 @keyframes pulse {
   0% { box-shadow: 0 0 0 0 rgba(62, 204, 196, 0.6); }
   70% { box-shadow: 0 0 0 8px rgba(62, 204, 196, 0); }
@@ -194,7 +180,14 @@ h1.hero-title {
   -webkit-background-clip: text; background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-h1.hero-title .it { text-shadow: 0 0 60px rgba(62, 204, 196, 0.3); }
+h1.hero-title .it {
+  background: none;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-text-fill-color: var(--teal-bright);
+  color: var(--teal-bright);
+  text-shadow: 0 0 60px rgba(62, 204, 196, 0.3);
+}
 
 .hero-sub {
   font-size: 18px; color: rgba(232, 236, 243, 0.72);
@@ -389,14 +382,6 @@ h1.hero-title .it { text-shadow: 0 0 60px rgba(62, 204, 196, 0.3); }
   opacity: 0.55; margin-bottom: 22px;
   filter: drop-shadow(0 0 18px rgba(62, 204, 196, 0.18));
   display: flex; align-items: baseline; gap: 6px;
-}
-.prob-num .slash { font-size: 22px; opacity: 0.5; -webkit-text-stroke: 1px var(--teal-bright); }
-.prob-num .total { opacity: 0.35; }
-.prob-num .tag {
-  font-family: var(--font-sans); font-size: 10px; font-weight: 600;
-  letter-spacing: 0.18em; text-transform: uppercase;
-  -webkit-text-stroke: 0; color: var(--slate-soft);
-  align-self: center; margin-left: auto;
 }
 .prob-card h3 {
   font-family: var(--font-display); font-weight: 700;
@@ -840,5 +825,4 @@ footer::before {
   .hero-metrics { grid-template-columns: 1fr; gap: 14px; }
   .hm-cell:not(:last-child)::after { display: none; }
   .hm-cell:not(:last-child) { padding-bottom: 14px; border-bottom: 1px solid var(--line); }
-  .nav-status { display: none; }
 }

@@ -4,7 +4,6 @@ import type { CSSProperties, MouseEvent, ReactNode } from 'react'
 
 interface ProblemItem {
   num: string
-  tag: string
   title: string
   body: string
   metric: string
@@ -15,7 +14,6 @@ interface ProblemItem {
 const PROBLEMS: ProblemItem[] = [
   {
     num: '01',
-    tag: 'Symptom A',
     title: 'Misalignment',
     body: 'Pitching the wrong message to the wrong buyer. Reps lean on instinct instead of structured signal — and prospects disengage before the value ever lands.',
     metric: '68',
@@ -24,7 +22,6 @@ const PROBLEMS: ProblemItem[] = [
   },
   {
     num: '02',
-    tag: 'Symptom B',
     title: 'Inefficiency',
     body: 'Hours burned on unqualified prospects, mis-sequenced outreach, and handoffs with zero context. The pipeline fills with noise instead of signal.',
     metric: '31',
@@ -33,7 +30,6 @@ const PROBLEMS: ProblemItem[] = [
   },
   {
     num: '03',
-    tag: 'Symptom C',
     title: 'Cost Implications',
     body: 'Every unqualified conversation carries a real cost — rep salary, tooling, leadership attention. Over a quarter, the revenue drag compounds significantly.',
     metric: '$42',
@@ -73,7 +69,6 @@ export default function Problem() {
             >
               <div className="prob-num">
                 {p.num}
-                <span className="tag">{p.tag}</span>
               </div>
               <h3>{p.title}</h3>
               <p>{p.body}</p>

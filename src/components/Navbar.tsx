@@ -7,10 +7,6 @@ export default function Navbar() {
           <img src="/alignify-logo-light.png" alt="Alignify" className="brand-mark" />
         </a>
         <div className="nav-actions">
-          <span className="nav-status">
-            <span className="dot" />
-            Engine online · 85% accuracy
-          </span>
           <a href="#cta" className="nav-cta">Request a Team Demo</a>
         </div>
       </div>
