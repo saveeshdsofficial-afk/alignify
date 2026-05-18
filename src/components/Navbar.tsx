@@ -7,7 +7,7 @@ export default function Navbar() {
           <img src="/alignify-logo-light.png" alt="Alignify" className="brand-mark" />
         </a>
         <div className="nav-actions">
-          <a href="#cta" className="nav-cta">Request a Team Demo</a>
+          <a href="#cta" className="nav-cta">Request a Demo</a>
         </div>
       </div>
     </nav>

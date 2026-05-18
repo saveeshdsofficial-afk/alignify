@@ -24,7 +24,7 @@ const PRODUCTS: Product[] = [
       'Objection-handling playbooks',
       'CRM-native (Salesforce, HubSpot, Pipedrive)',
     ],
-    ctaLabel: 'Request a Team Demo',
+    ctaLabel: 'Request a Demo',
   },
   {
     pill: 'Coming Soon',

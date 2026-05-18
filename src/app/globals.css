@@ -98,12 +98,12 @@ nav {
   backdrop-filter: blur(20px) saturate(140%);
   border-bottom: 1px solid var(--line);
 }
-.nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 4px 0; }
-.nav-inner .brand-mark {
-  width: 48px !important;
-  height: 48px !important;
-  min-width: 48px; min-height: 48px;
-  max-width: 48px; max-height: 48px;
+.nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 3px 0; }
+nav .nav-inner img.brand-mark {
+  width: 80px !important;
+  height: 80px !important;
+  min-width: 80px !important; min-height: 80px !important;
+  max-width: 80px !important; max-height: 80px !important;
 }
 .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; }
 img.brand-mark,
@@ -135,10 +135,10 @@ img.brand-mark,
 
 .nav-cta {
   background: linear-gradient(135deg, var(--teal), var(--teal-bright));
-  color: var(--ink); padding: 10px 22px;
-  font-family: var(--font-sans); font-size: 13px; font-weight: 700;
+  color: var(--ink); padding: 8px 18px;
+  font-family: var(--font-sans); font-size: 12px; font-weight: 700;
   border: none; cursor: pointer; border-radius: 100px;
-  display: inline-flex; align-items: center; gap: 10px;
+  display: inline-flex; align-items: center; gap: 8px;
   transition: transform .2s, box-shadow .2s;
   box-shadow: 0 4px 20px rgba(62, 204, 196, 0.3);
   letter-spacing: 0.02em; text-decoration: none;
@@ -153,6 +153,27 @@ img.brand-mark,
   display: flex; flex-direction: column; justify-content: center;
   position: relative;
 }
+.hero-smoke-wrap {
+  position: absolute; inset: 0; z-index: 0;
+  pointer-events: none; overflow: hidden;
+}
+.hero-smoke {
+  position: absolute; left: 0; top: 0;
+  width: 300px; height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle,
+    rgba(180, 245, 240, 0.6) 0%,
+    rgba(62, 204, 196, 0.42) 20%,
+    rgba(33, 168, 159, 0.18) 45%,
+    transparent 72%);
+  filter: blur(22px);
+  opacity: 0;
+  transform: translate(-9999px, -9999px);
+  transition: opacity .3s ease, transform .16s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform, opacity;
+  mix-blend-mode: screen;
+}
+
 .hero-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: 60px; align-items: center; }
 
 .hero-path {

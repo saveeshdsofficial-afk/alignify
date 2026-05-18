@@ -31,6 +31,9 @@ export default function Footer() {
           <div>
             <a href="#">Privacy</a>
             <a href="#">Terms</a>
+            <a href="https://kainovation.com/" target="_blank" rel="noopener noreferrer">
+              Designed &amp; Developed by Kainovation
+            </a>
           </div>
         </div>
       </div>

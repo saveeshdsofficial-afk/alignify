@@ -1,6 +1,9 @@
+import HeroSmoke from './HeroSmoke'
+
 export default function Hero() {
   return (
     <section className="hero">
+      <HeroSmoke />
       <div className="frame hero-grid">
         <HeroCopy />
         <AlignmentEngine />
@@ -34,7 +37,7 @@ function HeroCopy() {
       </div>
 
       <div className="hero-actions">
-        <a href="#cta" className="btn-glow">Request a Team Demo</a>
+        <a href="#cta" className="btn-glow">Request a Demo</a>
       </div>
     </div>
   )
@@ -145,16 +148,16 @@ function WheelQuadrants() {
             <stop offset="0%" stopColor="#2e3950" stopOpacity="0.45" />
             <stop offset="100%" stopColor="#2e3950" stopOpacity="0.1" />
           </radialGradient>
-          <path id="arc-nw" d="M -115,0 A 115,115 0 0,1 0,-115" fill="none" />
+          <path id="arc-nw" d="M 0,-115 A 115,115 0 0,0 -115,0" fill="none" />
           <path id="arc-ne" d="M 0,-115 A 115,115 0 0,1 115,0" fill="none" />
           <path id="arc-se" d="M 115,0 A 115,115 0 0,1 0,115" fill="none" />
-          <path id="arc-sw" d="M -115,0 A 115,115 0 0,0 0,115" fill="none" />
+          <path id="arc-sw" d="M 0,115 A 115,115 0 0,1 -115,0" fill="none" />
         </defs>
 
         <path d="M 0 0 L 0 -140 A 140 140 0 0 1 140 0 Z" fill="url(#qFill1)" stroke="rgba(62,204,196,0.4)" strokeWidth="1" />
         <path d="M 0 0 L 140 0 A 140 140 0 0 1 0 140 Z" fill="url(#qFill2)" stroke="rgba(33,168,159,0.4)" strokeWidth="1" />
         <path d="M 0 0 L 0 140 A 140 140 0 0 1 -140 0 Z" fill="url(#qFill3)" stroke="rgba(125,221,216,0.4)" strokeWidth="1" />
-        <path d="M 0 0 L -140 0 A 140 140 0 0 1 0 -140 Z" fill="url(#qFill4)" stroke="rgba(46,57,80,0.6)" strokeWidth="1" />
+        <path d="M 0 0 L -140 0 A 140 140 0 0 1 0 -140 Z" fill="url(#qFill4)" stroke="rgba(62,204,196,0.4)" strokeWidth="1" />
 
         <g fontFamily="Inter, sans-serif" fontSize="10" fontWeight="700" letterSpacing="1.8" fill="#ffffff">
           <text>

@@ -97,7 +97,7 @@ export default function FinalCTA() {
                 </select>
               </div>
               <button type="submit" className="form-btn" disabled={done}>
-                {done ? '✓ Demo requested — we’ll be in touch' : 'Request a Team Demo'}
+                {done ? '✓ Demo requested — we’ll be in touch' : 'Request a Demo'}
               </button>
               <div className="form-foot">
                 No pricing discussions on the first call — just alignment.
