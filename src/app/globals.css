@@ -98,22 +98,24 @@ nav {
   backdrop-filter: blur(20px) saturate(140%);
   border-bottom: 1px solid var(--line);
 }
-.nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 3px 0; }
+.nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 4px 0; }
 nav .nav-inner img.brand-mark {
-  width: 80px !important;
-  height: 80px !important;
-  min-width: 80px !important; min-height: 80px !important;
-  max-width: 80px !important; max-height: 80px !important;
+  width: 147px !important;
+  height: 51px !important;
+  min-width: 147px !important; min-height: 51px !important;
+  max-width: 147px !important; max-height: 51px !important;
+  object-fit: contain !important;
+  object-position: center !important;
 }
 .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; }
 img.brand-mark,
 .brand .brand-mark {
-  width: 120px !important;
-  height: 120px !important;
-  min-width: 120px;
-  min-height: 120px;
-  max-width: 120px;
-  max-height: 120px;
+  width: 64px !important;
+  height: 64px !important;
+  min-width: 64px;
+  min-height: 64px;
+  max-width: 64px;
+  max-height: 64px;
   flex-shrink: 0;
   display: block;
   object-fit: contain;
@@ -802,9 +804,9 @@ footer::before {
   content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px;
   background: linear-gradient(90deg, transparent, var(--teal-bright), transparent);
 }
-.foot-top { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 56px; padding-bottom: 44px; border-bottom: 1px solid var(--line); margin-bottom: 24px; }
+.foot-top { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 56px; padding-bottom: 28px; border-bottom: 1px solid var(--line); margin-bottom: 20px; align-items: start; }
 .foot-brand .brand-word { font-size: 28px; }
-.foot-brand p { color: rgba(232, 236, 243, 0.55); font-size: 14px; max-width: 320px; margin-top: 14px; line-height: 1.55; }
+.foot-brand p { color: rgba(232, 236, 243, 0.55); font-size: 14px; max-width: 320px; margin-top: 10px; line-height: 1.5; }
 .foot-col .label { display: block; margin-bottom: 18px; }
 .foot-col a, .foot-col span.fline {
   color: rgba(232, 236, 243, 0.65); font-size: 14px; text-decoration: none;
