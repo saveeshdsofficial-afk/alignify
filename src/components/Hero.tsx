@@ -1,9 +1,6 @@
-import HeroSmoke from './HeroSmoke'
-
 export default function Hero() {
   return (
     <section className="hero">
-      <HeroSmoke />
       <div className="frame hero-grid">
         <HeroCopy />
         <AlignmentEngine />
@@ -148,7 +145,7 @@ function WheelQuadrants() {
             <stop offset="0%" stopColor="#2e3950" stopOpacity="0.45" />
             <stop offset="100%" stopColor="#2e3950" stopOpacity="0.1" />
           </radialGradient>
-          <path id="arc-nw" d="M 0,-115 A 115,115 0 0,0 -115,0" fill="none" />
+          <path id="arc-nw" d="M -115,0 A 115,115 0 0,1 0,-115" fill="none" />
           <path id="arc-ne" d="M 0,-115 A 115,115 0 0,1 115,0" fill="none" />
           <path id="arc-se" d="M 115,0 A 115,115 0 0,1 0,115" fill="none" />
           <path id="arc-sw" d="M 0,115 A 115,115 0 0,1 -115,0" fill="none" />
