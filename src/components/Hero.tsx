@@ -188,7 +188,7 @@ function Hub() {
     <div className="hub">
       <div className="hub-disc" />
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src="/alignify-logo-light.png" alt="Alignify" className="hub-mark" />
+      <img src="/alignify-icon.png" alt="Alignify" className="hub-mark" />
     </div>
   )
 }
