@@ -1,6 +1,9 @@
+import HeroSmoke from './HeroSmoke'
+
 export default function Hero() {
   return (
     <section className="hero">
+      <HeroSmoke />
       <div className="frame hero-grid">
         <HeroCopy />
         <AlignmentEngine />
