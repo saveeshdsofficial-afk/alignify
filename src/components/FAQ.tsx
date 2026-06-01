@@ -7,20 +7,20 @@ interface QA {
 const QAS: QA[] = [
   {
     q: 'How is Alignify different from a regular sales intelligence tool?',
-    a: "Standard tools tell you what a prospect does — their company size, tech stack, intent signals. Alignify tells you how they think — their buying style, communication preferences, and the specific pitch that will land. We quantify buyer fit before you spend a minute on outreach, using DISC profiling at 85% accuracy.",
+    a: "Alignify profiles people — the salesperson and the prospect or customer. Alignify tells you how they think — their buying style, communication preferences, and the how. We also quantify buyer fit through company compatibility and how complementary your product or service is to the buyer, all before you spend a minute on outreach. Get a complete picture of whether the conversation is worth having, and exactly how to have it.",
     open: true,
   },
   {
     q: 'What is an alignment score?',
-    a: "A 0–100 score measuring how well a specific prospect fits your ideal buyer profile and your rep's approach. Built from structured signal: role fit, buying behaviour pattern, communication style, and DISC profile. Scores above 80 go directly to your hit list for outreach.",
+    a: "A 0–100 score measuring how well a specific prospect or customer fits with your personality and ideal buyer profile. Built from structured insights: personality approach, buying behaviour pattern, and communication style — all delivered in an easy-to-follow playbook.",
   },
   {
     q: 'Does Alignify integrate with our CRM?',
-    a: 'Yes — natively. Alignify connects to Salesforce, HubSpot, Pipedrive, and Close. Alignment scores, DISC profiles, and coaching notes sync directly onto the contact or deal record. Your reps see everything without leaving their CRM.',
+    a: 'Alignify is suitable for small teams or only enterprises, and integrates with your CRM to ensure easy customer management.',
   },
   {
     q: 'How long until we see measurable results?',
-    a: 'Reply rate improvements typically show within the first week. Meaningful conversion uplift appears by week three once the pipeline has turned over with aligned prospects. Most teams report a 30–70% lift in win ratio by end of quarter one.',
+    a: 'Reply rate lift typically shows in the first week. Meaningful conversion uplift appears by week three. Most teams report a 30–70% lift in win ratio by end of quarter one.',
   },
   {
     q: 'What about Recruitment and Mentor?',
@@ -36,7 +36,7 @@ export default function FAQ() {
           <div className="faq-head">
             <span className="label">Common Questions</span>
             <h2 className="section-h" style={{ fontSize: 'clamp(32px, 4vw, 52px)' }}>
-              Alignment <span className="it">insights.</span>
+              Everything you need <span className="it">before the demo.</span>
             </h2>
             <p>Answers to what revenue leaders ask us before the first demo.</p>
           </div>

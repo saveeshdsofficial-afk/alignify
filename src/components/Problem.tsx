@@ -15,7 +15,7 @@ const PROBLEMS: ProblemItem[] = [
   {
     num: '01',
     title: 'Misalignment',
-    body: 'Pitching the wrong message to the wrong buyer. Reps lean on instinct instead of structured signal — and prospects disengage before the value ever lands.',
+    body: 'Pitching the wrong message to the wrong buyer. Sales teams lean on instinct instead of intelligence. Without knowing how a prospect thinks, communicates and makes decisions, sales are lost.',
     metric: '68',
     unit: '%',
     label: <>Calls lost to<br />poor buyer fit</>,
@@ -23,15 +23,15 @@ const PROBLEMS: ProblemItem[] = [
   {
     num: '02',
     title: 'Inefficiency',
-    body: 'Hours burned on unqualified prospects, mis-sequenced outreach, and handoffs with zero context. The pipeline fills with noise instead of signal.',
+    body: 'Hours burned on the wrong pitch to the wrong company wastes time and burns you out. Fill your pipeline with qualified opportunities, not noise.',
     metric: '31',
     unit: '%',
-    label: <>Rep time spent<br />on dead leads</>,
+    label: <>Sales time spent<br />on dead leads</>,
   },
   {
     num: '03',
-    title: 'Cost Implications',
-    body: 'Every unqualified conversation carries a real cost — rep salary, tooling, leadership attention. Over a quarter, the revenue drag compounds significantly.',
+    title: 'Cost of a Lost Sale',
+    body: 'Every unqualified conversation carries a real cost — rep salary, leadership attention, opportunity cost. Each quarter, this compounds significantly.',
     metric: '$42',
     unit: 'k',
     label: <>Avg quarterly<br />drag per rep</>,
@@ -53,10 +53,10 @@ export default function Problem() {
         <div className="section-head">
           <span className="label">The Problem</span>
           <h2 className="section-h">
-            The cost of <span className="it">cold-calling.</span>
+            Lost <span className="it">sales.</span>
           </h2>
           <p className="section-deck">
-            A lack of real understanding of your prospect doesn&apos;t just waste time and resources — <strong>it erodes revenue.</strong> Alignify ensures every validated prospect leads to an aligned, high-probability sales call.
+            A lack of understanding your prospect or customer wastes time and resources — <strong>and erodes revenue.</strong> Alignify ensures you know how the buyer and business thinks, communicates, and makes decisions — generating more revenue.
           </p>
         </div>
         <div className="problem-grid">

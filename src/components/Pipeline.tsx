@@ -10,15 +10,14 @@ export default function Pipeline() {
             Aligned at <span className="it">every stage.</span>
           </h2>
           <p className="section-deck">
-            Four moments where conversations either close or collapse. Alignify embeds structured intelligence into each one.
+            Three sales interaction points where alignment is the difference between new business won or a lost opportunity. Alignify embeds buyer insights into each one.
           </p>
         </div>
 
         <div className="pipeline-grid">
           <ProspectingCell />
-          <OutreachCell />
-          <DiscoveryCell />
-          <NegotiationCell />
+          <PitchCell />
+          <CloseCell />
         </div>
       </div>
     </section>
@@ -36,7 +35,7 @@ function ProspectingCell() {
         Validate <span className="it">before</span> you dial.
       </h4>
       <p className="desc">
-        Score every prospect for alignment before spending a minute on outreach. Stop wasting reps on low-probability calls.
+        Know your buyer. Every prospect&apos;s personality is understood and aligned to yours — how they buy, how they communicate, and how to sell to them. Aligned connections win more.
       </p>
       <div className="cell-mini">
         <div className="mini-row"><span>Sarah Chen · VP Eng</span><span className="hi">94</span></div>
@@ -48,7 +47,7 @@ function ProspectingCell() {
   )
 }
 
-function OutreachCell() {
+function PitchCell() {
   const bars = [
     { label: 'Tone match', value: 92, suffix: '' },
     { label: 'Reply likely', value: 68, suffix: '%' },
@@ -58,13 +57,13 @@ function OutreachCell() {
     <div className="pipeline-cell">
       <div className="pipeline-step">
         <span className="label num">02</span>
-        <span className="label" style={{ color: 'var(--slate-soft)' }}>Outreach</span>
+        <span className="label" style={{ color: 'var(--slate-soft)' }}>The Pitch</span>
       </div>
       <h4>
-        Messages that <span className="it">land.</span>
+        A pitch that <span className="it">wins.</span>
       </h4>
       <p className="desc">
-        Tone and structure tuned to how your buyer actually thinks. Predicted reply rate before you hit send.
+        Connect tone, structure, and buyer motivators to know how your buyer thinks. Alignify provides the insights ensuring you&apos;re prepared to win.
       </p>
       <div className="cell-mini">
         <div className="mini-bar-wrap">
@@ -81,18 +80,18 @@ function OutreachCell() {
   )
 }
 
-function DiscoveryCell() {
+function CloseCell() {
   return (
     <div className="pipeline-cell">
       <div className="pipeline-step">
         <span className="label num">03</span>
-        <span className="label" style={{ color: 'var(--slate-soft)' }}>Discovery</span>
+        <span className="label" style={{ color: 'var(--slate-soft)' }}>The Close</span>
       </div>
       <h4>
-        <span className="it">Right foot</span> first.
+        Close <span className="it">to win.</span>
       </h4>
       <p className="desc">
-        Know the do&apos;s and don&apos;ts for each buyer profile before the meeting starts. Walk in with a prepared play.
+        Address a real gap for a real buyer. Know your fit and the problem you&apos;re solving — know how to close and how to connect. Be forearmed and close to win.
       </p>
       <div className="cell-mini">
         <div className="do-dont">
@@ -106,27 +105,3 @@ function DiscoveryCell() {
   )
 }
 
-function NegotiationCell() {
-  return (
-    <div className="pipeline-cell">
-      <div className="pipeline-step">
-        <span className="label num">04</span>
-        <span className="label" style={{ color: 'var(--slate-soft)' }}>Negotiation</span>
-      </div>
-      <h4>
-        Every objection, <span className="it">met.</span>
-      </h4>
-      <p className="desc">
-        Understand the motivation behind each &quot;not now.&quot; Respond with the reframe that works for this specific buyer.
-      </p>
-      <div className="cell-mini">
-        <div className="objection-block">
-          <div className="obj-q">&quot;We already have a solution for this.&quot;</div>
-          <div className="obj-a">
-            <strong>Try:</strong> Ask what metric they track for it today — and whether the current tool moves that metric by the margin they need.
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
