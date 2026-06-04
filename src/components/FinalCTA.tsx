@@ -74,7 +74,7 @@ export default function FinalCTA() {
                 <input
                   type="text"
                   id="company-input"
-                  placeholder="Acme Corp"
+                  placeholder="Company Name"
                   disabled={done}
                   value={company}
                   onChange={(e) => setCompany(e.target.value)}
@@ -99,9 +99,6 @@ export default function FinalCTA() {
               <button type="submit" className="form-btn" disabled={done}>
                 {done ? '✓ Demo requested — we’ll be in touch' : 'Request a Demo'}
               </button>
-              <div className="form-foot">
-                No pricing discussions on the first call — just alignment.
-              </div>
             </form>
           </div>
         </div>
