@@ -14,27 +14,27 @@ interface ProblemItem {
 const PROBLEMS: ProblemItem[] = [
   {
     num: '01',
-    title: 'Misalignment',
-    body: 'Pitching the wrong message to the wrong buyer. Sales teams lean on instinct instead of intelligence. Without knowing how a prospect thinks, communicates and makes decisions, sales are lost.',
+    title: 'Buyer misalignment',
+    body: 'Pitching the wrong message to the wrong buyer. Sales teams lean on instinct instead of intelligence. Without knowing how a prospect thinks, communicates, and makes decisions, sales are lost.',
     metric: '68',
     unit: '%',
     label: <>Calls lost to<br />poor buyer fit</>,
   },
   {
     num: '02',
-    title: 'Inefficiency',
-    body: 'Hours burned on the wrong pitch to the wrong company wastes time and burns you out. Fill your pipeline with qualified opportunities, not noise.',
+    title: 'Sales inefficiency',
+    body: 'Hours burned on the wrong pitch to the wrong company, wastes time and burns you out. Fill your pipeline with qualified opportunities not noise.',
     metric: '31',
     unit: '%',
     label: <>Sales time spent<br />on dead leads</>,
   },
   {
     num: '03',
-    title: 'Cost of a Lost Sale',
-    body: 'Every unqualified conversation carries a real cost — rep salary, leadership attention, opportunity cost. Each quarter, this compounds significantly.',
+    title: 'Cost of a lost sale',
+    body: 'Every lost sale opportunity carries a real cost — rep salary, leadership attention, and opportunity cost. With each lost sale, this compounds significantly.',
     metric: '$42',
     unit: 'k',
-    label: <>Avg quarterly<br />drag per rep</>,
+    label: <>Rep cost<br />per annum lost</>,
   },
 ]
 
@@ -56,7 +56,7 @@ export default function Problem() {
             Lost <span className="it">sales.</span>
           </h2>
           <p className="section-deck">
-            A lack of understanding your prospect or customer wastes time and resources — <strong>and erodes revenue.</strong> Alignify ensures you know how the buyer and business thinks, communicates, and makes decisions — generating more revenue.
+            Not understanding your prospect or customer wastes time and <strong>erodes revenue.</strong> Alignify ensures you know how the buyer and business thinks, communicates, and makes decisions — so you win more.
           </p>
         </div>
         <div className="problem-grid">

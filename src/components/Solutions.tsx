@@ -6,36 +6,11 @@ interface Solution {
 const SOLUTIONS: Solution[] = [
   {
     name: 'Buyer Personality Playbook',
-    body: 'Full DISC-based playbook for how to sell to this specific buyer. Communication style, objection patterns, pricing response, closing technique, meeting structure, and follow-up cadence. Pure Personality output — assesses the individual and generates guidance from their psychological profile.',
+    body: 'A complete buyer personality playbook covering how to sell to this specific buyer — communication style, objection patterns, pricing response, closing technique, meeting structure, and follow-up cadence. Generated from each individual psychological profile.',
   },
   {
     name: 'PCCA Playbook',
-    body: "Personality drives communication style and tone. Compatibility introduces product and service context to maximise sales success and effort. Complementary drives connection to enhance the buyer's business. A personality and company-level structural assessment with an overall alignment score and playbook.",
-  },
-]
-
-interface PriceCard {
-  tone: 'dark' | 'teal'
-  eyebrow: string
-  price: string
-  unit: string
-  rider: string
-}
-
-const PRICES: PriceCard[] = [
-  {
-    tone: 'dark',
-    eyebrow: 'Personality Playbook',
-    price: '$49',
-    unit: '/ month',
-    rider: '+ $19.95 per profile',
-  },
-  {
-    tone: 'teal',
-    eyebrow: 'PCCA Playbook',
-    price: '$99',
-    unit: '/ month',
-    rider: '+ $29.95 per profile',
+    body: "The complete PCCA playbook covering personality (which drives communication), compatibility (which drives company and product fit), and complementary (which drives the value you create together). A full structural assessment with an overall alignment score and playbook.",
   },
 ]
 
@@ -49,7 +24,7 @@ export default function Solutions() {
             Two playbooks. <span className="it">One alignment engine.</span>
           </h2>
           <p className="section-deck">
-            Start with the individual buyer or step up to the full PCCA assessment across people, company, and product fit. Both deliver an actionable playbook to your reps.
+            One platform with two playbooks. Use the Personality Playbook for individual buyer alignment, or step up to the full PCCA Playbook for deeper company and product fit.
           </p>
         </div>
 
@@ -67,27 +42,22 @@ export default function Solutions() {
           <span className="label">Pricing</span>
         </div>
 
-        <div className="pricing-grid">
-          {PRICES.map((p) => (
-            <article key={p.eyebrow} className={`price-card ${p.tone}`}>
-              <span className="price-eyebrow">{p.eyebrow}</span>
-              <div className="price-row">
-                <span className="price-big">{p.price}</span>
-                <span className="price-unit">{p.unit}</span>
-              </div>
-              <span className="price-rider">{p.rider}</span>
-            </article>
-          ))}
+        <div className="pricing-grid single">
+          <article className="price-card teal">
+            <span className="price-eyebrow">Monthly Subscription</span>
+            <div className="price-row">
+              <span className="price-big">$99</span>
+              <span className="price-unit">/ month</span>
+            </div>
+            <span className="price-rider">Includes 2 profiles</span>
+          </article>
         </div>
 
         <div className="impl-row">
           <span className="impl-pill">Implementation Fee</span>
           <div className="impl-items">
             <span className="impl-item">
-              <strong>Personality Playbook</strong> $995 one-off
-            </span>
-            <span className="impl-item">
-              <strong>PCCA Playbook</strong> $1,995 one-off
+              <strong>One-off</strong> $995.00
             </span>
           </div>
         </div>

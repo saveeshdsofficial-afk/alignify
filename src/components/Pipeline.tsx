@@ -10,7 +10,7 @@ export default function Pipeline() {
             Aligned at <span className="it">every stage.</span>
           </h2>
           <p className="section-deck">
-            Three sales interaction points where alignment is the difference between new business won or a lost opportunity. Alignify embeds buyer insights into each one.
+            Three sales interaction points where Alignify can make the difference between business won or lost. Alignify provides buyer insights into each one — so you win more often.
           </p>
         </div>
 
@@ -32,10 +32,10 @@ function ProspectingCell() {
         <span className="label" style={{ color: 'var(--slate-soft)' }}>Prospecting</span>
       </div>
       <h4>
-        Validate <span className="it">before</span> you dial.
+        Know your buyer <span className="it">and win.</span>
       </h4>
       <p className="desc">
-        Know your buyer. Every prospect&apos;s personality is understood and aligned to yours — how they buy, how they communicate, and how to sell to them. Aligned connections win more.
+        Every prospect&apos;s and every customer&apos;s personality is known and aligned. How they buy, how they communicate, and how to sell to them. Aligned connections win more.
       </p>
       <div className="cell-mini">
         <div className="mini-row"><span>Sarah Chen · VP Eng</span><span className="hi">94</span></div>
@@ -63,7 +63,7 @@ function PitchCell() {
         A pitch that <span className="it">wins.</span>
       </h4>
       <p className="desc">
-        Connect tone, structure, and buyer motivators to know how your buyer thinks. Alignify provides the insights ensuring you&apos;re prepared to win.
+        Alignify connects tone, structure, and buyer motivators so you know how your buyer thinks. Alignify provides the insights so you are prepared to win.
       </p>
       <div className="cell-mini">
         <div className="mini-bar-wrap">
@@ -91,7 +91,7 @@ function CloseCell() {
         Close <span className="it">to win.</span>
       </h4>
       <p className="desc">
-        Address a real gap for a real buyer. Know your fit and the problem you&apos;re solving — know how to close and how to connect. Be forearmed and close to win.
+        Alignify addresses how to identify the buying gap. Know how to close and how to connect. Be forearmed and close to win.
       </p>
       <div className="cell-mini">
         <div className="do-dont">

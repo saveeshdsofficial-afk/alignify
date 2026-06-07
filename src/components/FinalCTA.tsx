@@ -26,14 +26,14 @@ export default function FinalCTA() {
           <div className="cta-inner">
             <div>
               <div className="cta-eyebrow">
-                <span className="label">Request a Demo</span>
+                <span className="label">Contact us</span>
               </div>
               <h2 className="cta-h">
-                Align your <br />
-                <span className="it">sales pipeline.</span>
+                Align your sales effort <br />
+                <span className="it">and win.</span>
               </h2>
               <p className="cta-deck">
-                Drop your details and our team will reach out within one business day to schedule your personalised demo.
+                Complete the form and let&apos;s get on a call.
               </p>
               <div className="cta-proof">
                 <div className="cta-proof-avs">
@@ -42,7 +42,7 @@ export default function FinalCTA() {
                   <div className="av">RN</div>
                 </div>
                 <div className="cta-proof-text">
-                  <strong>200+ revenue leaders</strong> already on the platform
+                  <strong>Revenue leaders</strong> are already benefiting from the platform
                 </div>
               </div>
             </div>
@@ -53,7 +53,7 @@ export default function FinalCTA() {
               <span className="corner bl" />
               <span className="corner br" />
               <h3 className="form-h">
-                Book your <span className="it">demo</span>
+                Get in <span className="it">touch</span>
               </h3>
               <p className="form-sub">We&apos;ll be in touch within one business day.</p>
 
@@ -97,8 +97,11 @@ export default function FinalCTA() {
                 </select>
               </div>
               <button type="submit" className="form-btn" disabled={done}>
-                {done ? '✓ Demo requested — we’ll be in touch' : 'Request a Demo'}
+                {done ? '✓ Consultation requested — we’ll be in touch' : 'Request a consultation'}
               </button>
+              <div className="form-foot">
+                No implementation fee · 3-month free subscription.
+              </div>
             </form>
           </div>
         </div>

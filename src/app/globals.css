@@ -906,6 +906,7 @@ footer::before {
   display: grid; grid-template-columns: 1fr 1fr; gap: 22px;
   max-width: 1080px; margin: 0 auto 28px;
 }
+.pricing-grid.single { grid-template-columns: minmax(0, 520px); justify-content: center; }
 .price-card {
   padding: 28px 30px 30px;
   border-radius: 14px;

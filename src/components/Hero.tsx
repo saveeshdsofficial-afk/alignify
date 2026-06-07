@@ -17,28 +17,28 @@ function HeroCopy() {
     <div>
       <div className="hero-path">
         <span className="live-dot" />
-        <span className="seg active">Intelligent Alignment</span>
+        <span className="seg active">Sales Alignment</span>
       </div>
 
       <h1 className="hero-title">
-        <span style={{ whiteSpace: 'nowrap' }}>Know your customer</span> <br />
-        <span className="it">sell more.</span>
+        <span style={{ whiteSpace: 'nowrap' }}>Know your prospect.</span> <br />
+        <span style={{ whiteSpace: 'nowrap' }}>Know your customer.</span> <br />
+        <span className="it">Sell more.</span>
       </h1>
 
       <p className="hero-sub">
-        Alignify is the alignment tool for B2B sales teams. Profile every prospect, every customer, understand and align with their buying style and{' '}
+        Alignify is a profiling tool that delivers more sales wins. Profile every prospect, every customer, and every business, and understand how they buy to{' '}
         <strong>win more business.</strong>
       </p>
 
       <div className="hero-metrics">
         <MetricCell k="Win Ratio" big="+34" unit="%" delta="vs. baseline" />
         <MetricCell k="Sales Confidence" big="9.2" unit="/10" delta="Rep-reported" />
-        <MetricCell k="Opportunities to Win" big="31" unit="%" delta="vs. baseline" />
+        <MetricCell k="Opportunities vs Wins" big="31" unit="%" delta="vs baseline" />
       </div>
 
       <div className="hero-actions">
-        <a href="#cta" className="btn-glow">Get Started</a>
-        <a href="#products" className="btn-ghost">See How It Works</a>
+        <a href="#cta" className="btn-glow">Contact us</a>
       </div>
     </div>
   )

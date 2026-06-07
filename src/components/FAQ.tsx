@@ -15,16 +15,12 @@ const QAS: QA[] = [
     a: "A 0–100 score measuring how well a specific prospect or customer fits with your personality and ideal buyer profile. Built from structured insights: personality approach, buying behaviour pattern, and communication style — all delivered in an easy-to-follow playbook.",
   },
   {
-    q: 'Does Alignify integrate with our CRM?',
-    a: 'Alignify is suitable for small teams or only enterprises, and integrates with your CRM to ensure easy customer management.',
+    q: 'Does Alignify work for small and large businesses, and does it integrate with our CRM?',
+    a: 'Alignify is suitable from small teams to enterprise — any size business with a sales motion can use it, and it integrates with your CRM to keep customer management seamless.',
   },
   {
     q: 'How long until we see measurable results?',
-    a: 'Reply rate lift typically shows in the first week. Meaningful conversion uplift appears by week three. Most teams report a 30–70% lift in win ratio by end of quarter one.',
-  },
-  {
-    q: 'What about Recruitment and Mentor?',
-    a: "Both products are in private development. Customers who join Sales now get priority early access when each launches. Register your interest from the Products section and we'll notify you when pilot spots open.",
+    a: 'Reply rate lift typically shows in the first few weeks. Meaningful conversion uplift appears soon after. Most teams report a 30–70% lift in win ratio by end of quarter one.',
   },
 ]
 
@@ -36,9 +32,8 @@ export default function FAQ() {
           <div className="faq-head">
             <span className="label">Common Questions</span>
             <h2 className="section-h" style={{ fontSize: 'clamp(32px, 4vw, 52px)' }}>
-              Everything you need <span className="it">before the demo.</span>
+              Key questions <span className="it">answered.</span>
             </h2>
-            <p>Answers to what revenue leaders ask us before the first demo.</p>
           </div>
           <div className="faq-list">
             {QAS.map((f, i) => (
