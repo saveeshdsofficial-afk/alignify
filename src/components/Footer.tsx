@@ -8,22 +8,16 @@ export default function Footer() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/alignify-logo-light.png" alt="Alignify" className="brand-mark foot-brand-mark" />
             </a>
-            <p>Win more with Alignify — intelligent alignment for B2B sales teams.</p>
+            <p>Intelligent alignment for sales teams.</p>
           </div>
           <div className="foot-col">
             <span className="label">Contact</span>
-            <a href="mailto:sales@alignify.com" target="_blank" rel="noopener noreferrer">sales@alignify.com</a>
+            <span className="fline">TBC</span>
             <span className="fline">Sydney, Australia</span>
           </div>
           <div className="foot-col">
             <span className="label">Product</span>
-            <a href="#products">Sales</a>
-            <a href="#products">
-              Recruitment <span style={{ color: 'var(--slate-soft)', fontSize: 11, fontStyle: 'italic' }}>· Coming Soon</span>
-            </a>
-            <a href="#products">
-              Mentor <span style={{ color: 'var(--slate-soft)', fontSize: 11, fontStyle: 'italic' }}>· Coming Soon</span>
-            </a>
+            <a href="#cta">Sales</a>
           </div>
         </div>
         <div className="foot-bottom">

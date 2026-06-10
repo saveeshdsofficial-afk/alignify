@@ -6,21 +6,21 @@ interface QA {
 
 const QAS: QA[] = [
   {
-    q: 'How is Alignify different from a regular sales intelligence tool?',
+    q: 'How is Alignify different from other sales intelligence tools?',
     a: "Alignify profiles people — the salesperson and the prospect or customer. Alignify tells you how they think — their buying style, communication preferences, and the how. We also quantify buyer fit through company compatibility and how complementary your product or service is to the buyer, all before you spend a minute on outreach. Get a complete picture of whether the conversation is worth having, and exactly how to have it.",
     open: true,
   },
   {
     q: 'What is an alignment score?',
-    a: "A 0–100 score measuring how well a specific prospect or customer fits with your personality and ideal buyer profile. Built from structured insights: personality approach, buying behaviour pattern, and communication style — all delivered in an easy-to-follow playbook.",
+    a: "A 0–100 score measuring how well a specific prospect or customer fits with your personality and ideal buyer profile. Built from structured insights: personality approach, buying behaviour pattern, and communication style — all delivered in an easy-to-follow playbook with the 'how' to win.",
   },
   {
     q: 'Does Alignify work for small and large businesses, and does it integrate with our CRM?',
-    a: 'Alignify is suitable from small teams to enterprise — any size business with a sales motion can use it, and it integrates with your CRM to keep customer management seamless.',
+    a: 'Alignify is suitable from small teams to enterprise — any size business with a sales focus can use it, and it can integrate with your CRM.',
   },
   {
     q: 'How long until we see measurable results?',
-    a: 'Reply rate lift typically shows in the first few weeks. Meaningful conversion uplift appears soon after. Most teams report a 30–70% lift in win ratio by end of quarter one.',
+    a: 'Prospecting rate lift typically shows in the first few weeks. Meaningful conversion uplift appears soon after. Most teams report a 30–70% lift in win ratio by end of quarter one.',
   },
 ]
 

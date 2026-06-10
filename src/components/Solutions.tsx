@@ -6,11 +6,11 @@ interface Solution {
 const SOLUTIONS: Solution[] = [
   {
     name: 'Buyer Personality Playbook',
-    body: 'A complete buyer personality playbook covering how to sell to this specific buyer — communication style, objection patterns, pricing response, closing technique, meeting structure, and follow-up cadence. Generated from each individual psychological profile.',
+    body: "A complete buyer personality playbook covering how to sell to this specific buyer — communication style, objection patterns, pricing response, closing technique, meeting structure, and follow-up cadence. Generated from each individual's personality profile.",
   },
   {
     name: 'PCCA Playbook',
-    body: "The complete PCCA playbook covering personality (which drives communication), compatibility (which drives company and product fit), and complementary (which drives the value you create together). A full structural assessment with an overall alignment score and playbook.",
+    body: 'The PCCA playbook covers personality, compatibility, and complementary — delivering a full structural assessment with an overall alignment score and playbook.',
   },
 ]
 
@@ -24,7 +24,7 @@ export default function Solutions() {
             Two playbooks. <span className="it">One alignment engine.</span>
           </h2>
           <p className="section-deck">
-            One platform with two playbooks. Use the Personality Playbook for individual buyer alignment, or step up to the full PCCA Playbook for deeper company and product fit.
+            One platform with two playbooks. Use the Personality Playbook for individual buyer insights, or step up to the full PCCA Playbook for deeper company and product fit.
           </p>
         </div>
 
@@ -49,7 +49,7 @@ export default function Solutions() {
               <span className="price-big">$99</span>
               <span className="price-unit">/ month</span>
             </div>
-            <span className="price-rider">Includes 2 profiles</span>
+            <span className="price-rider">Includes 5 personality profiles</span>
           </article>
         </div>
 
@@ -72,7 +72,7 @@ export default function Solutions() {
             <span className="label">Introductory Offer</span>
           </div>
           <div className="intro-body">
-            No implementation fee · 3 months free subscription · first 100 companies.
+            No implementation fee · limited to the first 100 companies.
           </div>
         </div>
       </div>

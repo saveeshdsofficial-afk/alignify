@@ -28,7 +28,7 @@ const MATRIX: MatrixRow[] = [
     letter: 'A',
     name: 'Alignment',
     heading: 'The overall score.',
-    body: 'A weighted tri-framework score derived from Personality, Compatibility, and Complementary. The Alignment score is the output Alignify surfaces to the end user.',
+    body: 'A weighted tri-framework score derived from Personality, Compatibility, and Complementary. The Alignment score and playbook is the output Alignify surfaces to the end user.',
   },
 ]
 
@@ -42,7 +42,7 @@ export default function PCCA() {
             The PCCA <span className="it">model.</span>
           </h2>
           <p className="section-deck">
-            A matrix that turns a sales opportunity into a win.
+            A model that turns a sales opportunity into a win.
           </p>
         </div>
 

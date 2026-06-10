@@ -6,7 +6,7 @@ export default function FinalCTA() {
   const [done, setDone] = useState(false)
   const [email, setEmail] = useState('')
   const [company, setCompany] = useState('')
-  const [size, setSize] = useState('')
+  const [linkedin, setLinkedin] = useState('')
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
@@ -15,7 +15,7 @@ export default function FinalCTA() {
       setDone(false)
       setEmail('')
       setCompany('')
-      setSize('')
+      setLinkedin('')
     }, 5000)
   }
 
@@ -81,26 +81,22 @@ export default function FinalCTA() {
                 />
               </div>
               <div className="form-field">
-                <label htmlFor="size-input">Team size</label>
-                <select
-                  id="size-input"
+                <label htmlFor="linkedin-input">Company LinkedIn</label>
+                <input
+                  type="url"
+                  id="linkedin-input"
+                  placeholder="linkedin.com/company/..."
                   required
                   disabled={done}
-                  value={size}
-                  onChange={(e) => setSize(e.target.value)}
-                >
-                  <option value="">Select team size</option>
-                  <option>1–10 sales reps</option>
-                  <option>11–50 sales reps</option>
-                  <option>51–200 sales reps</option>
-                  <option>200+ sales reps</option>
-                </select>
+                  value={linkedin}
+                  onChange={(e) => setLinkedin(e.target.value)}
+                />
               </div>
               <button type="submit" className="form-btn" disabled={done}>
-                {done ? '✓ Consultation requested — we’ll be in touch' : 'Request a consultation'}
+                {done ? '✓ Meeting requested — we’ll be in touch' : 'Request a meeting'}
               </button>
               <div className="form-foot">
-                No implementation fee · 3-month free subscription.
+                Special offer · 3 months free subscription · includes 15 personality profiles.
               </div>
             </form>
           </div>

@@ -2,7 +2,7 @@ import type { CSSProperties } from 'react'
 
 export default function Pipeline() {
   return (
-    <section className="section section-alt" style={{ paddingTop: 60 }}>
+    <section className="section section-alt">
       <div className="frame">
         <div className="section-head centered">
           <span className="label">The Sales Journey</span>
@@ -10,7 +10,7 @@ export default function Pipeline() {
             Aligned at <span className="it">every stage.</span>
           </h2>
           <p className="section-deck">
-            Three sales interaction points where Alignify can make the difference between business won or lost. Alignify provides buyer insights into each one — so you win more often.
+            Alignify can make the difference between business won or lost — providing buyer insights at every interaction point, so you win more often.
           </p>
         </div>
 
@@ -35,7 +35,7 @@ function ProspectingCell() {
         Know your buyer <span className="it">and win.</span>
       </h4>
       <p className="desc">
-        Every prospect&apos;s and every customer&apos;s personality is known and aligned. How they buy, how they communicate, and how to sell to them. Aligned connections win more.
+        Every prospect and every customer is known and aligned before you start selling. How they buy, how they communicate, and how to sell to them. Aligned connections win more.
       </p>
       <div className="cell-mini">
         <div className="mini-row"><span>Sarah Chen · VP Eng</span><span className="hi">94</span></div>
