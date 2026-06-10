@@ -16,7 +16,7 @@ const QAS: QA[] = [
   },
   {
     q: 'Does Alignify work for small and large businesses, and does it integrate with our CRM?',
-    a: 'Alignify is suitable from small teams to enterprise — any size business with a sales focus can use it, and it can integrate with your CRM.',
+    a: 'Alignify is suitable for any size business with a sales focus, and it can integrate with your CRM.',
   },
   {
     q: 'How long until we see measurable results?',

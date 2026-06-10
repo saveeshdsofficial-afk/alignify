@@ -35,7 +35,7 @@ function ProspectingCell() {
         Know your buyer <span className="it">and win.</span>
       </h4>
       <p className="desc">
-        Every prospect and every customer is known and aligned before you start selling. How they buy, how they communicate, and how to sell to them. Aligned connections win more.
+        Every prospect and every customer is known and aligned before you start selling. How they buy, how they communicate, and how to sell to them. Aligned connections win more often.
       </p>
       <div className="cell-mini">
         <div className="mini-row"><span>Sarah Chen · VP Eng</span><span className="hi">94</span></div>

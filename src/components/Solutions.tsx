@@ -10,7 +10,7 @@ const SOLUTIONS: Solution[] = [
   },
   {
     name: 'PCCA Playbook',
-    body: 'The PCCA playbook covers personality, compatibility, and complementary — delivering a full structural assessment with an overall alignment score and playbook.',
+    body: 'The PCCA playbook covers personality, compatibility, and complementary elements to ensure you have the right communication, understand product and solution fit, and identify and create value for both parties. This playbook delivers on all three and gives you an overall alignment score.',
   },
 ]
 
@@ -24,7 +24,7 @@ export default function Solutions() {
             Two playbooks. <span className="it">One alignment engine.</span>
           </h2>
           <p className="section-deck">
-            One platform with two playbooks. Use the Personality Playbook for individual buyer insights, or step up to the full PCCA Playbook for deeper company and product fit.
+            One platform with two playbooks. Use the Personality Playbook for individual buyer insights, or use the PCCA Playbook for deeper company and product fit.
           </p>
         </div>
 
@@ -51,15 +51,6 @@ export default function Solutions() {
             </div>
             <span className="price-rider">Includes 5 personality profiles</span>
           </article>
-        </div>
-
-        <div className="impl-row">
-          <span className="impl-pill">Implementation Fee</span>
-          <div className="impl-items">
-            <span className="impl-item">
-              <strong>One-off</strong> $995.00
-            </span>
-          </div>
         </div>
 
         <div className="intro-offer">
