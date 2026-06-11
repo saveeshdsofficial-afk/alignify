@@ -10,7 +10,7 @@ interface Testimonial {
 
 const TESTIMONIALS: Testimonial[] = [
   {
-    quote: <>&quot;The first <span className="em">five minutes</span> of every call changed. We walk in aligned — every time.&quot;</>,
+    quote: <>&quot;The first <span className="em">five minutes</span> of every call changed. We walk in aligned – every time.&quot;</>,
     initials: 'MT',
     avClass: 'a2',
     name: 'Marcus Thorne',

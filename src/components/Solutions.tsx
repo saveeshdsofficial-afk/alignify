@@ -6,7 +6,7 @@ interface Solution {
 const SOLUTIONS: Solution[] = [
   {
     name: 'Buyer Personality Playbook',
-    body: "A complete buyer personality playbook covering how to sell to this specific buyer — communication style, objection patterns, pricing response, closing technique, meeting structure, and follow-up cadence. Generated from each individual's personality profile.",
+    body: "A complete buyer personality playbook covering how to sell to this specific buyer – communication style, objection patterns, pricing response, closing technique, meeting structure, and follow-up cadence. Generated from each individual's personality profile.",
   },
   {
     name: 'PCCA Playbook',
@@ -74,7 +74,7 @@ export default function Solutions() {
             <span className="label">Introductory Offer</span>
           </div>
           <div className="intro-body">
-            No implementation fee · 3 months free subscription · limited to the first 100 companies.
+            No implementation fee · 3 months free subscription · Limited to the first 100 companies.
           </div>
         </div>
       </div>

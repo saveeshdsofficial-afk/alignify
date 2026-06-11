@@ -22,7 +22,7 @@ function HeroCopy() {
       </h1>
 
       <p className="hero-sub">
-        Alignify is a profiling tool that delivers you more sales success. Profile every prospect, every customer, every business — understand how they buy to{' '}
+        Alignify is a profiling tool that delivers you more sales success. Profile every prospect, every customer, every business – understand how they buy to{' '}
         <strong>win more business.</strong>
       </p>
 
@@ -30,10 +30,6 @@ function HeroCopy() {
         <MetricCell k="Win Ratio" big="+34" unit="%" delta="vs. baseline" />
         <MetricCell k="Sales Confidence" big="9.2" unit="/10" delta="Rep-reported" />
         <MetricCell k="Opportunities vs Wins" big="31" unit="%" delta="vs baseline" />
-      </div>
-
-      <div className="hero-actions">
-        <a href="#cta" className="btn-glow">Contact us</a>
       </div>
     </div>
   )

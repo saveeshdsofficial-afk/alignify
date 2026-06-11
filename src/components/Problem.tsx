@@ -31,7 +31,7 @@ const PROBLEMS: ProblemItem[] = [
   {
     num: '03',
     title: 'Cost of a lost sale',
-    body: 'Every lost sale opportunity carries a real cost — rep salary, leadership attention, and opportunity cost. With each lost sale, costs compound — reduce costs with Alignify.',
+    body: 'Every lost sale opportunity carries a real cost – rep salary, leadership attention, and opportunity cost. With each lost sale, costs compound – reduce costs with Alignify.',
     metric: '$42',
     unit: 'k',
     label: <>Rep cost<br />per annum lost</>,
@@ -56,7 +56,7 @@ export default function Problem() {
             Lost <span className="it">sales.</span>
           </h2>
           <p className="section-deck">
-            Not understanding your prospect or customer wastes time and <strong>erodes revenue.</strong> Alignify ensures you know how the buyer and business thinks, communicates, and makes buying decisions — so you win more.
+            Not understanding your prospect or customer wastes time and <strong>erodes revenue.</strong> Alignify ensures you know how the buyer and business thinks, communicates, and makes buying decisions – so you win more.
           </p>
         </div>
         <div className="problem-grid">

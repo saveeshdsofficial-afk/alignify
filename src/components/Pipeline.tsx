@@ -10,7 +10,7 @@ export default function Pipeline() {
             Aligned at <span className="it">every stage.</span>
           </h2>
           <p className="section-deck">
-            Alignify can make the difference between business won or lost — providing buyer insights at every interaction point, so you win more often.
+            Alignify can make the difference between business won or lost – providing buyer insights at every interaction point, so you win more often.
           </p>
         </div>
 

@@ -7,12 +7,12 @@ interface QA {
 const QAS: QA[] = [
   {
     q: 'How is Alignify different from other sales intelligence tools?',
-    a: "Alignify profiles people — the salesperson and the prospect or customer. Alignify tells you how they think — their buying style, communication preferences, and the how. We also quantify buyer fit through company compatibility and how complementary your product or service is to the buyer, all before you spend a minute on outreach. Get a complete picture of whether the conversation is worth having, and exactly how to have it.",
+    a: "Alignify profiles people – the salesperson and the prospect or customer. Alignify tells you how they think – their buying style, communication preferences, and the how. We also quantify buyer fit through company compatibility and how complementary your product or service is to the buyer, all before you spend a minute on outreach. Get a complete picture of whether the conversation is worth having, and exactly how to have it.",
     open: true,
   },
   {
     q: 'What is an alignment score?',
-    a: "A 0–100 score measuring how well a specific prospect or customer fits with your personality and ideal buyer profile. Built from structured insights: personality approach, buying behaviour pattern, and communication style — all delivered in an easy-to-follow playbook with the 'how' to win.",
+    a: "A 0–100 score measuring how well a specific prospect or customer fits with your personality and ideal buyer profile. Built from structured insights: personality approach, buying behaviour pattern, and communication style – all delivered in an easy-to-follow playbook with the 'how' to win.",
   },
   {
     q: 'Does Alignify work for small and large businesses, and does it integrate with our CRM?',

@@ -93,7 +93,7 @@ export default function FinalCTA() {
                 />
               </div>
               <button type="submit" className="form-btn" disabled={done}>
-                {done ? '✓ Meeting requested — we’ll be in touch' : 'Request a meeting'}
+                {done ? '✓ Meeting requested – we’ll be in touch' : 'Request a meeting'}
               </button>
               <div className="form-foot">
                 Special offer · 3 months free subscription · includes 15 personality profiles.

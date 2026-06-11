@@ -22,7 +22,7 @@ const MATRIX: MatrixRow[] = [
     letter: 'C',
     name: 'Complementary',
     heading: 'Do we add value.',
-    body: "Alignify shows you if the strengths, capabilities, and offering of your business address the buyer's gaps and needs — turning fit into value neither side could create alone.",
+    body: "Alignify shows you if the strengths, capabilities, and offering of your business address the buyer's gaps and needs – turning fit into value neither side could create alone.",
   },
   {
     letter: 'A',

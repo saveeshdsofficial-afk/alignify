@@ -287,7 +287,9 @@ h1.hero-title .it {
 .engine-stage {
   position: relative; aspect-ratio: 1 / 1;
   max-width: 600px; margin-left: auto; width: 100%;
+  overflow: visible;
 }
+.engine-stage svg { width: 100%; height: 100%; display: block; }
 .engine-stage::before {
   content: ''; position: absolute; inset: 5%;
   border-radius: 50%;
@@ -805,7 +807,9 @@ footer::before {
   content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px;
   background: linear-gradient(90deg, transparent, var(--teal-bright), transparent);
 }
-.foot-top { display: grid; grid-template-columns: 1.6fr 1fr; gap: 56px; padding-bottom: 28px; border-bottom: 1px solid var(--line); margin-bottom: 20px; align-items: start; }
+.foot-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 56px; padding-bottom: 28px; border-bottom: 1px solid var(--line); margin-bottom: 20px; }
+.foot-top .foot-col { text-align: right; }
+.foot-top .foot-col a, .foot-top .foot-col span.fline { text-align: right; }
 .foot-brand .brand-word { font-size: 28px; }
 .foot-brand p { color: rgba(232, 236, 243, 0.55); font-size: 14px; max-width: 320px; margin-top: 14px; line-height: 1.5; }
 .foot-brand img.foot-brand-mark,
@@ -939,7 +943,9 @@ footer::before {
 }
 .price-card.teal .price-unit { color: rgba(13, 18, 32, 0.7); }
 .price-rider {
-  font-size: 13.5px; color: rgba(255, 255, 255, 0.65);
+  font-family: var(--font-sans);
+  font-size: 13.5px; font-weight: 400; letter-spacing: 0;
+  color: rgba(255, 255, 255, 0.65);
   display: block;
 }
 .price-card.teal .price-rider { color: rgba(13, 18, 32, 0.75); }
@@ -1032,7 +1038,7 @@ footer::before {
   .cta-inner { grid-template-columns: 1fr; gap: 48px; }
   .faq-wrap { grid-template-columns: 1fr; gap: 36px; }
   .faq-head { position: static; }
-  .foot-top { grid-template-columns: 1fr 1fr; gap: 36px; }
+  .foot-top { gap: 36px; }
   .sol-grid { grid-template-columns: 1fr; }
   .pricing-grid { grid-template-columns: 1fr; }
 }
@@ -1042,22 +1048,69 @@ footer::before {
 }
 @media (max-width: 760px) {
   .section { padding: 80px 0; }
+  .section-head { margin-bottom: 44px; }
   .problem-grid { grid-template-columns: 1fr; }
   .pipeline-grid { grid-template-columns: 1fr; }
   .pipeline-cell { border-right: none; border-bottom: 1px solid var(--line); }
   .pipeline-cell:not(:last-child)::after, .pipeline-cell:not(:last-child)::before { display: none; }
   .test-grid { grid-template-columns: 1fr; }
   .cta-card { padding: 52px 28px; }
-  .foot-top { grid-template-columns: 1fr; }
+  .foot-top { flex-direction: column; }
+  .foot-top .foot-col { text-align: left; }
+  .foot-top .foot-col a, .foot-top .foot-col span.fline { text-align: left; }
   .pcca-row { grid-template-columns: 1fr; }
   .pcca-letter { border-right: none; border-bottom: 1px solid var(--line-teal); padding: 18px 20px; flex-direction: row; align-items: baseline; gap: 14px; }
   .pcca-letter-big { font-size: 40px; }
   .pcca-row-body { padding: 22px; }
+  nav .nav-inner img.brand-mark { width: 110px !important; height: 38px !important; min-width: 110px !important; min-height: 38px !important; max-width: 110px !important; max-height: 38px !important; }
+  .foot-brand img.foot-brand-mark, .foot-brand .foot-brand-link img.brand-mark {
+    width: 150px !important; height: 52px !important;
+    min-width: 150px !important; min-height: 52px !important;
+    max-width: 150px !important; max-height: 52px !important;
+  }
+  .prob-card { padding: 28px 22px; }
+  .pipeline-cell { padding: 28px 22px; }
+  .sol-card { padding: 28px 22px 26px; }
+  .price-card { padding: 24px 22px 26px; }
+  .intro-offer { padding: 20px 22px; }
+  .pcard { padding: 28px 22px; }
+  .tcard { padding: 28px 22px; }
+  .impl-row { flex-direction: column; align-items: center; gap: 16px; }
+  .impl-items { justify-content: center; }
 }
 @media (max-width: 680px) {
   .hero { padding: 40px 0 80px; }
   .frame { padding: 0 20px; }
-  .hero-metrics { grid-template-columns: 1fr; gap: 14px; }
+  h1.hero-title { font-size: clamp(38px, 9vw, 56px); }
+  h1.hero-title span[style] { white-space: normal !important; }
+  .hero-sub { font-size: 16px; margin-bottom: 32px; }
+  .hero-metrics { grid-template-columns: 1fr; gap: 14px; padding: 20px 22px; }
   .hm-cell:not(:last-child)::after { display: none; }
   .hm-cell:not(:last-child) { padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+  .section-h { font-size: clamp(30px, 7vw, 44px); }
+  .section-deck { font-size: 15.5px; }
+  .price-big { font-size: 44px; }
+  .price-mid { font-size: 30px; }
+  .form-h { font-size: 22px; }
+  .cta-h { font-size: clamp(32px, 8vw, 48px); }
+  .foot-brand p { font-size: 13px; }
+}
+@media (max-width: 420px) {
+  .frame { padding: 0 16px; }
+  h1.hero-title { font-size: clamp(34px, 9.5vw, 44px); letter-spacing: -0.03em; }
+  .section-h { font-size: clamp(26px, 7.5vw, 38px); }
+  .hm-cell { padding: 0; }
+  .hero-metrics { padding: 18px 18px; }
+  .price-card { padding: 22px 18px 24px; }
+  .price-row.addons { gap: 4px 6px; }
+  .price-mid { font-size: 26px; }
+  .price-dot { font-size: 22px; padding: 0 2px; }
+  .pcca-letter-big { font-size: 34px; }
+  .pcca-row-body h3 { font-size: 17px; }
+  .pcca-row-body p { font-size: 14px; }
+  .prob-num { font-size: 64px; margin-bottom: 14px; }
+  .prob-card h3 { font-size: 21px; }
+  .prob-metric-num { font-size: 36px; }
+  .prob-metric-num .u { font-size: 18px; }
+  .cta-card { padding: 40px 22px; }
 }
