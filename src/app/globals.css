@@ -935,13 +935,13 @@ footer::before {
 .price-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 8px; }
 .price-big {
   font-family: var(--font-display); font-weight: 700;
-  font-size: 56px; letter-spacing: -0.03em; line-height: 1; color: #fff;
+  font-size: 42px; letter-spacing: -0.03em; line-height: 1; color: #fff;
 }
-.price-card.teal .price-big { color: var(--ink); }
+.price-card.teal .price-big { color: #fff; }
 .price-unit {
-  font-size: 16px; color: rgba(255, 255, 255, 0.7);
+  font-size: 15px; color: rgba(255, 255, 255, 0.72);
 }
-.price-card.teal .price-unit { color: rgba(13, 18, 32, 0.7); }
+.price-card.teal .price-unit { color: rgba(255, 255, 255, 0.8); }
 .price-rider {
   font-family: var(--font-sans);
   font-size: 13.5px; font-weight: 400; letter-spacing: 0;
@@ -1089,7 +1089,7 @@ footer::before {
   .hm-cell:not(:last-child) { padding-bottom: 14px; border-bottom: 1px solid var(--line); }
   .section-h { font-size: clamp(30px, 7vw, 44px); }
   .section-deck { font-size: 15.5px; }
-  .price-big { font-size: 44px; }
+  .price-big { font-size: 36px; }
   .price-mid { font-size: 30px; }
   .form-h { font-size: 22px; }
   .cta-h { font-size: clamp(32px, 8vw, 48px); }
