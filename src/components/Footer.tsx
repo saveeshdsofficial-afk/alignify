@@ -15,10 +15,6 @@ export default function Footer() {
             <span className="fline">TBC</span>
             <span className="fline">Sydney, Australia</span>
           </div>
-          <div className="foot-col">
-            <span className="label">Product</span>
-            <a href="#cta">Sales</a>
-          </div>
         </div>
         <div className="foot-bottom">
           <span>© 2026 Alignify · Intelligent Alignment</span>

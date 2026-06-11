@@ -15,11 +15,6 @@ export default function Hero() {
 function HeroCopy() {
   return (
     <div>
-      <div className="hero-path">
-        <span className="live-dot" />
-        <span className="seg active">Sales Alignment</span>
-      </div>
-
       <h1 className="hero-title">
         <span style={{ whiteSpace: 'nowrap' }}>Know your prospect,</span> <br />
         <span style={{ whiteSpace: 'nowrap' }}>Know your customer,</span> <br />

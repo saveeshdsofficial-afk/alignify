@@ -42,14 +42,25 @@ export default function Solutions() {
           <span className="label">Pricing</span>
         </div>
 
-        <div className="pricing-grid single">
-          <article className="price-card teal">
-            <span className="price-eyebrow">Monthly Subscription</span>
+        <div className="pricing-grid">
+          <article className="price-card dark">
+            <span className="price-eyebrow">Subscription</span>
             <div className="price-row">
               <span className="price-big">$99</span>
               <span className="price-unit">/ month</span>
             </div>
-            <span className="price-rider">Includes 5 personality profiles</span>
+            <span className="price-rider">Includes 5 Personality profiles</span>
+          </article>
+          <article className="price-card teal">
+            <span className="price-eyebrow">Playbook Add-ons</span>
+            <div className="price-row addons">
+              <span className="price-mid">$19.95</span>
+              <span className="price-tag">Personality</span>
+              <span className="price-dot" aria-hidden="true">·</span>
+              <span className="price-mid">$39.95</span>
+              <span className="price-tag">PCCA</span>
+            </div>
+            <span className="price-rider">per additional playbook</span>
           </article>
         </div>
 
@@ -63,7 +74,7 @@ export default function Solutions() {
             <span className="label">Introductory Offer</span>
           </div>
           <div className="intro-body">
-            No implementation fee · limited to the first 100 companies.
+            No implementation fee · 3 months free subscription · limited to the first 100 companies.
           </div>
         </div>
       </div>
