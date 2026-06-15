@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="frame">
         <div className="foot-top">
           <div className="foot-brand">
-            <a href="#" className="brand foot-brand-link">
+            <a href="/" className="brand foot-brand-link">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/alignify-logo-light.png" alt="Alignify" className="brand-mark foot-brand-mark" />
             </a>
@@ -19,8 +19,8 @@ export default function Footer() {
         <div className="foot-bottom">
           <span>© 2026 Alignify · Intelligent Alignment</span>
           <div>
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms</a>
             <a href="https://kainovation.com/" target="_blank" rel="noopener noreferrer">
               Designed &amp; Developed by Kainovation
             </a>

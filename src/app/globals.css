@@ -710,6 +710,7 @@ h1.hero-title .it {
   -webkit-background-clip: text; background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: var(--font-display); font-style: italic; font-weight: 500;
+  padding-right: 0.08em;
 }
 .form-sub { font-size: 13px; color: var(--slate); margin-bottom: 26px; }
 .form-field { margin-bottom: 16px; }
@@ -762,7 +763,7 @@ h1.hero-title .it {
 }
 .faq-section > .frame { position: relative; z-index: 1; }
 .faq-wrap { display: grid; grid-template-columns: 1fr 1.6fr; gap: 64px; align-items: start; }
-.faq-head { position: sticky; top: 100px; }
+.faq-head { align-self: start; }
 .faq-head .label { margin-bottom: 14px; display: block; }
 .faq-head p { font-size: 15px; color: rgba(232, 236, 243, 0.65); line-height: 1.55; margin-top: 16px; }
 .faq-list { display: flex; flex-direction: column; gap: 10px; }
@@ -1114,3 +1115,32 @@ footer::before {
   .prob-metric-num .u { font-size: 18px; }
   .cta-card { padding: 40px 22px; }
 }
+
+/* ============ LEGAL PAGES (privacy / terms) ============ */
+.legal { border-top: none; }
+.legal-head { margin-bottom: 48px; }
+.legal-head .label { display: inline-block; margin-bottom: 16px; }
+.legal-head .section-h { font-size: clamp(36px, 5vw, 56px); }
+.legal-body { max-width: 760px; }
+.legal-body h2 {
+  font-family: var(--font-display); font-weight: 600;
+  font-size: 22px; letter-spacing: -0.01em; color: #e8ecf3;
+  margin: 40px 0 14px;
+}
+.legal-body h2:first-child { margin-top: 0; }
+.legal-body p {
+  font-size: 15.5px; line-height: 1.75; color: rgba(232, 236, 243, 0.72);
+  margin-bottom: 16px;
+}
+.legal-body ul { list-style: none; margin: 0 0 16px; padding: 0; }
+.legal-body li {
+  position: relative; padding-left: 22px; margin-bottom: 10px;
+  font-size: 15.5px; line-height: 1.6; color: rgba(232, 236, 243, 0.72);
+}
+.legal-body li::before {
+  content: ''; position: absolute; left: 0; top: 11px;
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--teal-bright); box-shadow: 0 0 10px rgba(62, 204, 196, 0.6);
+}
+.legal-body a { color: var(--teal-bright); text-decoration: none; transition: color .2s; }
+.legal-body a:hover { color: var(--teal-pale); text-decoration: underline; }

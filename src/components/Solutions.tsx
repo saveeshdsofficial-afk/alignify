@@ -53,12 +53,11 @@ export default function Solutions() {
           </article>
           <article className="price-card teal">
             <span className="price-eyebrow">Playbook Add-ons</span>
-            <div className="price-row">
-              <span className="price-big">$19.95</span>
+            <div className="price-row addons">
+              <span className="price-mid">$19.95</span>
               <span className="price-unit">Personality</span>
-            </div>
-            <div className="price-row">
-              <span className="price-big">$39.95</span>
+              <span className="price-dot">·</span>
+              <span className="price-mid">$39.95</span>
               <span className="price-unit">PCCA</span>
             </div>
             <span className="price-rider">per additional playbook</span>
