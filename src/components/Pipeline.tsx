@@ -5,9 +5,9 @@ export default function Pipeline() {
     <section className="section section-alt">
       <div className="frame">
         <div className="section-head centered">
-          <span className="label">The Sales Journey</span>
+          <span className="label">The SALES Solution</span>
           <h2 className="section-h">
-            Aligned at <span className="it">every stage.</span>
+            Alignment at <span className="it">every stage.</span>
           </h2>
           <p className="section-deck">
             Alignify can make the difference between business won or lost – providing buyer insights at every interaction point, so you win more often.

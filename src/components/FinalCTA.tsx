@@ -81,11 +81,11 @@ export default function FinalCTA() {
                 />
               </div>
               <div className="form-field">
-                <label htmlFor="linkedin-input">Company LinkedIn</label>
+                <label htmlFor="linkedin-input">Personal LinkedIn</label>
                 <input
                   type="url"
                   id="linkedin-input"
-                  placeholder="linkedin.com/company/..."
+                  placeholder="linkedin.com/in/..."
                   required
                   disabled={done}
                   value={linkedin}

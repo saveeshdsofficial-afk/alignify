@@ -19,7 +19,7 @@ export default function Solutions() {
     <section className="section solutions-section">
       <div className="frame">
         <div className="section-head centered">
-          <span className="label">Sales Solutions &amp; Pricing</span>
+          <span className="label">The Alignify Solution and Pricing</span>
           <h2 className="section-h">
             Two playbooks. <span className="it">One alignment engine.</span>
           </h2>
@@ -42,26 +42,35 @@ export default function Solutions() {
           <span className="label">Pricing</span>
         </div>
 
-        <div className="pricing-grid">
-          <article className="price-card dark">
-            <span className="price-eyebrow">Subscription</span>
-            <div className="price-row">
-              <span className="price-big">$99</span>
-              <span className="price-unit">/ month</span>
+        <div className="pricing-stack">
+          <article className="price-card dark price-wide">
+            <div className="price-wide-main">
+              <span className="price-eyebrow">Subscription</span>
+              <div className="price-row">
+                <span className="price-big">$99</span>
+                <span className="price-unit">/ month</span>
+              </div>
             </div>
             <span className="price-rider">Includes 5 Personality profiles</span>
           </article>
-          <article className="price-card teal">
-            <span className="price-eyebrow">Playbook Add-ons</span>
-            <div className="price-row addons">
-              <span className="price-mid">$19.95</span>
-              <span className="price-unit">Personality</span>
-              <span className="price-dot">·</span>
-              <span className="price-mid">$39.95</span>
-              <span className="price-unit">PCCA</span>
-            </div>
-            <span className="price-rider">per additional playbook</span>
-          </article>
+          <div className="pricing-pair">
+            <article className="price-card teal">
+              <span className="price-eyebrow">Alignify Personality Playbook</span>
+              <div className="price-row">
+                <span className="price-big">$19.95</span>
+                <span className="price-unit">/ playbook</span>
+              </div>
+              <span className="price-rider">per additional playbook</span>
+            </article>
+            <article className="price-card teal">
+              <span className="price-eyebrow">Alignify PCCA Playbook</span>
+              <div className="price-row">
+                <span className="price-big">$39.95</span>
+                <span className="price-unit">/ playbook</span>
+              </div>
+              <span className="price-rider">per additional playbook</span>
+            </article>
+          </div>
         </div>
 
         <div className="intro-offer">

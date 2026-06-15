@@ -45,7 +45,7 @@ export default function Testimonials() {
     <section className="section section-alt">
       <div className="frame">
         <div className="section-head centered">
-          <span className="label">From the Field</span>
+          <span className="label">Evidence from the field</span>
           <h2 className="section-h">
             Trusted by <span className="it">revenue leaders.</span>
           </h2>
