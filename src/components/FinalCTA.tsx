@@ -2,14 +2,32 @@
 
 import { useState, type FormEvent } from 'react'
 
+// Brevo form endpoint (from the embed code). The form keeps its custom styling
+// and submits here in the background, so the page never redirects.
+const BREVO_ACTION =
+  'https://ac7154eb.sibforms.com/v2/serve/MUIFAH5K3YcaJRrpiOusEbTyFqdpk5RD1pj4by6Rt-JnFvg1eiYK-sS6SfYl0J6ng3WmXOXVZE3YvbCEQ9Yrd2lzK0vuF3LTt7u9NLZq1hDd_3IRv1DiSeQ4t-8dU0-xxYIaKHyX083myKGhHNuK-DEWNRu55SRzFZO7MbpTADZFdNCkUpcF3IbaPOvSJmjUs4dOSIVrbhjRJNPJEQ=='
+
 export default function FinalCTA() {
   const [done, setDone] = useState(false)
   const [email, setEmail] = useState('')
   const [company, setCompany] = useState('')
   const [linkedin, setLinkedin] = useState('')
 
+  // Submit to Brevo the same way their own script does: a multipart FormData POST.
+  // `no-cors` lets the cross-origin request through (we can't read the opaque
+  // response, so we show success optimistically — fine for a contact form).
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
+    const formData = new FormData(e.currentTarget)
+
+    void fetch(BREVO_ACTION, {
+      method: 'POST',
+      mode: 'no-cors',
+      body: formData,
+    }).catch(() => {
+      /* opaque response / network — nothing actionable client-side */
+    })
+
     setDone(true)
     setTimeout(() => {
       setDone(false)
@@ -62,9 +80,9 @@ export default function FinalCTA() {
                 <input
                   type="email"
                   id="email-input"
+                  name="EMAIL"
                   placeholder="you@company.com"
                   required
-                  disabled={done}
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
@@ -74,8 +92,9 @@ export default function FinalCTA() {
                 <input
                   type="text"
                   id="company-input"
+                  name="COMPANY:name"
                   placeholder="Company Name"
-                  disabled={done}
+                  required
                   value={company}
                   onChange={(e) => setCompany(e.target.value)}
                 />
@@ -85,13 +104,26 @@ export default function FinalCTA() {
                 <input
                   type="url"
                   id="linkedin-input"
+                  name="LINKEDIN"
                   placeholder="linkedin.com/in/..."
                   required
-                  disabled={done}
                   value={linkedin}
                   onChange={(e) => setLinkedin(e.target.value)}
                 />
               </div>
+
+              {/* Brevo anti-bot honeypot — must be present and empty */}
+              <input
+                type="text"
+                name="email_address_check"
+                defaultValue=""
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+                style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px' }}
+              />
+              <input type="hidden" name="locale" value="en" />
+
               <button type="submit" className="form-btn" disabled={done}>
                 {done ? '✓ Meeting requested – we’ll be in touch' : 'Request a meeting'}
               </button>
