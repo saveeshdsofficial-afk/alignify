@@ -916,11 +916,12 @@ footer::before {
 .pricing-stack { display: grid; gap: 22px; max-width: 1080px; margin: 0 auto 28px; }
 .pricing-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
 .price-wide {
-  display: flex; align-items: center; justify-content: space-between;
-  gap: 24px; flex-wrap: wrap;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 10px; text-align: center;
 }
-.price-wide .price-eyebrow { margin-bottom: 12px; }
-.price-wide .price-rider { text-align: right; }
+.price-wide .price-eyebrow { margin-bottom: 4px; }
+.price-wide .price-row { justify-content: center; }
+.price-wide .price-rider { text-align: center; }
 .price-card {
   padding: 28px 30px 30px;
   border-radius: 14px;
@@ -1052,8 +1053,6 @@ footer::before {
   .sol-grid { grid-template-columns: 1fr; }
   .pricing-grid { grid-template-columns: 1fr; }
   .pricing-pair { grid-template-columns: 1fr; }
-  .price-wide { flex-direction: column; align-items: flex-start; gap: 14px; }
-  .price-wide .price-rider { text-align: left; }
 }
 @media (max-width: 1024px) {
   .hero-grid { grid-template-columns: 1fr; gap: 60px; }

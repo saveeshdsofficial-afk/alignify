@@ -43,16 +43,6 @@ export default function Solutions() {
         </div>
 
         <div className="pricing-stack">
-          <article className="price-card dark price-wide">
-            <div className="price-wide-main">
-              <span className="price-eyebrow">Subscription</span>
-              <div className="price-row">
-                <span className="price-big">$99</span>
-                <span className="price-unit">/ month</span>
-              </div>
-            </div>
-            <span className="price-rider">Includes 5 Personality profiles</span>
-          </article>
           <div className="pricing-pair">
             <article className="price-card teal">
               <span className="price-eyebrow">Alignify Personality Playbook</span>
@@ -71,6 +61,16 @@ export default function Solutions() {
               <span className="price-rider">per additional playbook</span>
             </article>
           </div>
+          <article className="price-card dark price-wide">
+            <div className="price-wide-main">
+              <span className="price-eyebrow">Subscription</span>
+              <div className="price-row">
+                <span className="price-big">$99</span>
+                <span className="price-unit">/ month</span>
+              </div>
+            </div>
+            <span className="price-rider">Includes 5 Personality profiles</span>
+          </article>
         </div>
 
         <div className="intro-offer">
