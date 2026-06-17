@@ -5,7 +5,7 @@ export default function Pipeline() {
     <section className="section section-alt">
       <div className="frame">
         <div className="section-head centered">
-          <span className="label">The SALES Solution</span>
+          <span className="label">The Solution</span>
           <h2 className="section-h">
             Alignment at <span className="it">every stage.</span>
           </h2>
