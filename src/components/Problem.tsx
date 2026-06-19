@@ -23,7 +23,7 @@ const PROBLEMS: ProblemItem[] = [
   {
     num: '02',
     title: 'Sales inefficiency',
-    body: 'Hours burned on the wrong pitch to the wrong company wastes time and burns you out. Fill your pipeline with qualified opportunities, with Alignify.',
+    body: 'Hours spent on the wrong pitch that is not aligned to your buyer creates sales inefficiency. Fill your pipeline with qualified opportunities by using Alignify.',
     metric: '31',
     unit: '%',
     label: <>Sales time spent<br />on dead leads</>,

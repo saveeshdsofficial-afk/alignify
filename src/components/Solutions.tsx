@@ -50,7 +50,7 @@ export default function Solutions() {
                 <span className="price-big">$19.95</span>
                 <span className="price-unit">/ playbook</span>
               </div>
-              <span className="price-rider">per additional playbook</span>
+              <span className="price-rider">per playbook</span>
             </article>
             <article className="price-card teal">
               <span className="price-eyebrow">Alignify PCCA Playbook</span>
@@ -58,18 +58,17 @@ export default function Solutions() {
                 <span className="price-big">$39.95</span>
                 <span className="price-unit">/ playbook</span>
               </div>
-              <span className="price-rider">per additional playbook</span>
+              <span className="price-rider">per playbook</span>
             </article>
           </div>
           <article className="price-card dark price-wide">
             <div className="price-wide-main">
-              <span className="price-eyebrow">Subscription</span>
+              <span className="price-eyebrow">Alignify Subscription</span>
               <div className="price-row">
                 <span className="price-big">$99</span>
                 <span className="price-unit">/ month</span>
               </div>
             </div>
-            <span className="price-rider">Includes 5 Personality profiles</span>
           </article>
         </div>
 
@@ -83,7 +82,7 @@ export default function Solutions() {
             <span className="label">Introductory Offer</span>
           </div>
           <div className="intro-body">
-            No implementation fee · 3 months free subscription · Limited to the first 100 companies.
+            No implementation fee · 3 months free subscription · Limited to the first 50 companies.
           </div>
         </div>
       </div>
