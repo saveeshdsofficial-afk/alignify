@@ -22,8 +22,8 @@ function HeroCopy() {
       </h1>
 
       <p className="hero-sub">
-        Alignify is a profiling tool that delivers you more sales success. Profile every prospect, every customer, every business – understand how they buy to{' '}
-        <strong>win more often.</strong>
+        Alignify is a selling tool that delivers you more sales success. Profile every prospect, every customer, every business – understand how they buy to{' '}
+        <strong>win more deals.</strong>
       </p>
 
       <div className="hero-metrics">

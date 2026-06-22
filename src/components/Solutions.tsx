@@ -10,7 +10,7 @@ const SOLUTIONS: Solution[] = [
   },
   {
     name: 'PCCA Playbook',
-    body: 'The PCCA playbook covers personality, compatibility, and complementary elements to ensure you have the right communication, understand product and solution fit, and identify and create value for both parties. This playbook delivers on all three and gives you an overall alignment score.',
+    body: 'The PCCA playbook covers personality, compatibility, and complementary elements to ensure you have the right communication, understand product and solution fit, and identify and create value for both parties and provides an overall alignment score.',
   },
 ]
 
