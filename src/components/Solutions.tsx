@@ -5,12 +5,12 @@ interface Solution {
 
 const SOLUTIONS: Solution[] = [
   {
-    name: 'Buyer Personality Playbook',
-    body: "A complete buyer personality playbook covering how to sell to this specific buyer – communication style, objection patterns, pricing response, closing technique, meeting structure, and follow-up cadence. Generated from each individual's personality profile.",
+    name: 'Your Playbook',
+    body: "A complete personality playbook on you, what motivates you, your style, what drives you. Generated from each individual's 28 question profile.",
   },
   {
-    name: 'PCCA Playbook',
-    body: 'The PCCA playbook covers personality, compatibility, and complementary elements to ensure you have the right communication, understand product and solution fit, and create value for both parties including an overall alignment score.',
+    name: 'Alignify Playbook',
+    body: 'The Alignify playbook covers personality, compatibility, and complementary elements to ensure you have the right communication and pitch and understand your product and solution fit including an overall alignment score.',
   },
 ]
 
@@ -24,7 +24,7 @@ export default function Solutions() {
             Two playbooks. <span className="it">One alignment engine.</span>
           </h2>
           <p className="section-deck">
-            One platform with two playbooks. Use the Personality Playbook for individual buyer insights, or use the PCCA Playbook for deeper company and product fit.
+            One platform with two playbooks. Use the &ldquo;you&rdquo; Playbook to understand yourself and the other to understand your buyer.
           </p>
         </div>
 
@@ -45,7 +45,7 @@ export default function Solutions() {
         <div className="pricing-stack">
           <div className="pricing-pair">
             <article className="price-card teal">
-              <span className="price-eyebrow">Alignify Personality Playbook</span>
+              <span className="price-eyebrow">Your Personality Playbook</span>
               <div className="price-row">
                 <span className="price-big">$19.95</span>
                 <span className="price-unit">/ playbook</span>
@@ -53,9 +53,9 @@ export default function Solutions() {
               <span className="price-rider">per playbook</span>
             </article>
             <article className="price-card teal">
-              <span className="price-eyebrow">Alignify PCCA Playbook</span>
+              <span className="price-eyebrow">Buyer Personality Playbook</span>
               <div className="price-row">
-                <span className="price-big">$39.95</span>
+                <span className="price-big">$29.95</span>
                 <span className="price-unit">/ playbook</span>
               </div>
               <span className="price-rider">per playbook</span>
@@ -68,6 +68,7 @@ export default function Solutions() {
                 <span className="price-big">$99</span>
                 <span className="price-unit">/ month</span>
               </div>
+              <span className="price-rider">includes 3 Buyer Playbooks</span>
             </div>
           </article>
         </div>
@@ -82,7 +83,7 @@ export default function Solutions() {
             <span className="label">Introductory Offer</span>
           </div>
           <div className="intro-body">
-            No implementation fee · 3 months free subscription · Limited to the first 50 companies.
+            3 months free subscription · Limited to the first 50 companies.
           </div>
         </div>
       </div>

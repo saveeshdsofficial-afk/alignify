@@ -12,7 +12,7 @@ export default function Footer() {
           </div>
           <div className="foot-col">
             <span className="label">Contact</span>
-            <span className="fline">TBC</span>
+            <span className="fline">sales@alignify.com.au</span>
             <span className="fline">Sydney, Australia</span>
           </div>
         </div>

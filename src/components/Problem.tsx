@@ -15,18 +15,18 @@ const PROBLEMS: ProblemItem[] = [
   {
     num: '01',
     title: 'Buyer misalignment',
-    body: 'Pitching the wrong message to the wrong buyer results in lost sales. Without knowing how a prospect thinks, communicates, and makes buying decisions, sales are lost.',
+    body: 'Pitching the wrong message to the wrong buyer results in lost sales. Without knowing how a prospect thinks, communicates, and makes buying decisions, sales can be lost.',
     metric: '68',
     unit: '%',
-    label: <>of sales calls<br />lost to poor fit</>,
+    label: <>of sales calls<br />lost to buyer misalignment</>,
   },
   {
     num: '02',
     title: 'Sales inefficiency',
-    body: 'Hours spent on a pitch which is not aligned to your buyer and the way they buy is incredibly costly and completely inefficient. Know your opportunities by using Alignify.',
+    body: 'Hours spent on a pitch which is not aligned to your buyer and the way they buy is incredibly costly and completely inefficient. Know your opportunities, use Alignify.',
     metric: '31',
     unit: '%',
-    label: <>Sales time spent<br />on dead leads</>,
+    label: <>Sales time spent<br />on lost opportunities</>,
   },
   {
     num: '03',
@@ -34,7 +34,7 @@ const PROBLEMS: ProblemItem[] = [
     body: 'Every lost sale opportunity carries a real cost – rep salary, leadership attention, and opportunity cost. With each lost sale, costs compound – reduce costs with Alignify.',
     metric: '$42',
     unit: 'k',
-    label: <>Rep cost<br />per annum lost</>,
+    label: <>Rep cost<br />per annum</>,
   },
 ]
 

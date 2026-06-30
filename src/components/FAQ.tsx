@@ -7,7 +7,7 @@ interface QA {
 const QAS: QA[] = [
   {
     q: 'How is Alignify different from other sales intelligence tools?',
-    a: "Alignify profiles people – the salesperson and the prospect or customer. Alignify tells you how they think – their buying style, communication preferences, and the how. We also quantify buyer fit through company compatibility and how complementary your product or service is to the buyer, all before you spend a minute on outreach. Get a complete picture of whether the conversation is worth having, and exactly how to have it.",
+    a: 'Alignify profiles people – the salesperson and the prospect or customer. Alignify tells you how they think – their buying style, communication preferences, and the how. We also quantify buyer fit through compatibility and complementary elements, all before you spend a minute on outreach. Get a complete picture of whether the conversation is worth having, and exactly how to have it.',
     open: true,
   },
   {
