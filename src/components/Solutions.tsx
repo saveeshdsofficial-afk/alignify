@@ -10,7 +10,7 @@ const SOLUTIONS: Solution[] = [
   },
   {
     name: 'Alignify Playbook',
-    body: 'The Alignify playbook covers personality, compatibility, and complementary elements to ensure you have the right communication and pitch and understand your product and solution fit including an overall alignment score.',
+    body: 'The Alignify playbook covers personality, compatibility, and complementary elements to ensure you have the right pitch with the right tone, communication and connection for your product or service.',
   },
 ]
 
