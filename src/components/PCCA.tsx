@@ -21,7 +21,7 @@ const MATRIX: MatrixRow[] = [
   {
     letter: 'P',
     name: 'Playbook',
-    heading: 'How do we win',
+    heading: 'How do you win',
     body: 'Understand the sales opportunity and how to win it. Alignify provides a playbook that identifies communication style, pricing sensitivity, drivers, trust architecture addressing the buyers gaps and needs, so you can win more often.',
   },
 ]
