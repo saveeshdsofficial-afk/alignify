@@ -9,7 +9,7 @@ const SOLUTIONS: Solution[] = [
     body: "A complete personality playbook on you, what motivates you, your style, what drives you. Generated from each individual's 28 question profile.",
   },
   {
-    name: 'Alignify Playbook',
+    name: 'Buyer Playbook',
     body: 'The Alignify playbook covers personality, compatibility, and complementary elements to ensure you have the right pitch with the right tone, communication and connection for your product or service.',
   },
 ]
@@ -24,7 +24,7 @@ export default function Solutions() {
             Two playbooks. <span className="it">One alignment engine.</span>
           </h2>
           <p className="section-deck">
-            One platform with two playbooks. Use the &ldquo;you&rdquo; Playbook to understand yourself and the other to understand your buyer.
+            One platform with two playbooks. Use the &ldquo;you&rdquo; Playbook to understand yourself and the Alignify playbook to understand your buyer.
           </p>
         </div>
 
