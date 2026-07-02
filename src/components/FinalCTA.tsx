@@ -71,9 +71,9 @@ export default function FinalCTA() {
               <span className="corner bl" />
               <span className="corner br" />
               <h3 className="form-h">
-                Get in <span className="it">touch</span>
+                Get your <span className="it">profile</span>
               </h3>
-              <p className="form-sub">We&apos;ll be in touch within one business day.</p>
+              <p className="form-sub">Fill this out and get your personality profile.</p>
 
               <div className="form-field">
                 <label htmlFor="email-input">Work email</label>
@@ -125,7 +125,7 @@ export default function FinalCTA() {
               <input type="hidden" name="locale" value="en" />
 
               <button type="submit" className="form-btn" disabled={done}>
-                {done ? '✓ Meeting requested – we’ll be in touch' : 'Request a meeting'}
+                {done ? '✓ Profile on its way – check your inbox' : 'Get My Profile'}
               </button>
               <div className="form-foot">
                 Special offer · 3 months free subscription · includes 15 personality profiles.
