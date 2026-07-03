@@ -85,10 +85,9 @@ export default function Solutions() {
           <div className="intro-body">
             3 months free subscription · Limited to the first 50 companies.
           </div>
-        </div>
-
-        <div className="pricing-cta">
-          <a href="#cta" className="btn-glow">Try out for free</a>
+          <div className="pricing-cta">
+            <a href="#cta" className="btn-glow">Try out for free</a>
+          </div>
         </div>
       </div>
     </section>

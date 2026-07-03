@@ -71,7 +71,7 @@ export default function FinalCTA() {
               <span className="corner bl" />
               <span className="corner br" />
               <h3 className="form-h">
-                Get your <span className="it">profile</span>
+                Get your free <span className="it">profile</span>
               </h3>
               <p className="form-sub">Fill this out and get your personality profile.</p>
 
