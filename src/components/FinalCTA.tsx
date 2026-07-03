@@ -44,7 +44,7 @@ export default function FinalCTA() {
           <div className="cta-inner">
             <div>
               <div className="cta-eyebrow">
-                <span className="label">Contact us</span>
+                <span className="label">Start for free</span>
               </div>
               <h2 className="cta-h">
                 Align your sales effort <br />
@@ -125,7 +125,7 @@ export default function FinalCTA() {
               <input type="hidden" name="locale" value="en" />
 
               <button type="submit" className="form-btn" disabled={done}>
-                {done ? '✓ Profile on its way – check your inbox' : 'Get My Profile'}
+                {done ? '✓ Profile on its way – check your inbox' : 'Get my free profile'}
               </button>
               <div className="form-foot">
                 Special offer · 3 months free subscription · includes 15 personality profiles.

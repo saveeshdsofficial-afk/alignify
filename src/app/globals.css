@@ -919,6 +919,7 @@ footer::before {
 .pricing-grid.single { grid-template-columns: minmax(0, 520px); justify-content: center; }
 
 .pricing-stack { display: grid; gap: 22px; max-width: 1080px; margin: 0 auto 28px; }
+.pricing-cta { text-align: center; margin-top: 32px; }
 .pricing-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
 .price-wide {
   display: flex; flex-direction: column; align-items: center; justify-content: center;
