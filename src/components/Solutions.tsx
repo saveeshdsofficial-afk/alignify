@@ -78,12 +78,14 @@ export default function Solutions() {
           <span className="intro-corner tr" />
           <span className="intro-corner bl" />
           <span className="intro-corner br" />
-          <div className="intro-eyebrow">
-            <span className="intro-star">★</span>
-            <span className="label">Introductory Offer</span>
-          </div>
-          <div className="intro-body">
-            3 months free subscription · Limited to the first 50 companies.
+          <div className="intro-offer-main">
+            <div className="intro-eyebrow">
+              <span className="intro-star">★</span>
+              <span className="label">Introductory Offer</span>
+            </div>
+            <div className="intro-body">
+              3 months free subscription · Limited to the first 50 companies.
+            </div>
           </div>
           <div className="pricing-cta">
             <a href="#cta" className="btn-glow">Try out for free</a>

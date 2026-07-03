@@ -919,7 +919,8 @@ footer::before {
 .pricing-grid.single { grid-template-columns: minmax(0, 520px); justify-content: center; }
 
 .pricing-stack { display: grid; gap: 22px; max-width: 1080px; margin: 0 auto 28px; }
-.pricing-cta { position: relative; z-index: 1; margin-top: 18px; }
+.intro-offer-main { position: relative; z-index: 1; }
+.pricing-cta { position: relative; z-index: 1; flex-shrink: 0; }
 .pricing-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
 .price-wide {
   display: flex; flex-direction: column; align-items: center; justify-content: center;
@@ -1009,6 +1010,7 @@ footer::before {
 
 .intro-offer {
   position: relative;
+  display: flex; align-items: center; justify-content: space-between; gap: 24px;
   max-width: 1080px; margin: 0 auto;
   padding: 22px 28px;
   border-radius: 14px;
@@ -1090,7 +1092,7 @@ footer::before {
   .pipeline-cell { padding: 28px 22px; }
   .sol-card { padding: 28px 22px 26px; }
   .price-card { padding: 24px 22px 26px; }
-  .intro-offer { padding: 20px 22px; }
+  .intro-offer { padding: 20px 22px; flex-direction: column; align-items: flex-start; gap: 16px; }
   .pcard { padding: 28px 22px; }
   .tcard { padding: 28px 22px; }
   .impl-row { flex-direction: column; align-items: center; gap: 16px; }
