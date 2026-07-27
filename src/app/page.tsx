@@ -15,12 +15,12 @@ export default function HomePage() {
       <Navbar />
       <Hero />
       <Problem />
-      <Pipeline />
       <PCCA />
       <Solutions />
+      <Pipeline />
+      <FinalCTA />
       <Testimonials />
       <FAQ />
-      <FinalCTA />
       <Footer />
     </>
   )

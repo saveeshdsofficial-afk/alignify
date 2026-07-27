@@ -18,11 +18,11 @@ function HeroCopy() {
       <h1 className="hero-title">
         <span style={{ whiteSpace: 'nowrap' }}>Know your prospect,</span> <br />
         <span style={{ whiteSpace: 'nowrap' }}>Know your customer,</span> <br />
-        <span className="it">and Sell more.</span>
+        <span className="it">Sell more.</span>
       </h1>
 
       <p className="hero-sub">
-        Alignify is a selling tool that delivers you more sales success. Profile every prospect, every customer, every business – understand how they buy to{' '}
+        Alignify is a selling tool that delivers you more sales success. Profile every prospect, every customer – understand how they buy to{' '}
         <strong>win more deals.</strong>
       </p>
 
