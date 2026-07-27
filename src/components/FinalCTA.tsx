@@ -71,9 +71,9 @@ export default function FinalCTA() {
               <span className="corner bl" />
               <span className="corner br" />
               <h3 className="form-h">
-                Get your free <span className="it">profile</span>
+                Get one month&apos;s free <span className="it">trial</span>
               </h3>
-              <p className="form-sub">Fill this out and get your personality profile.</p>
+              <p className="form-sub">Fill this out and start your one month free trial.</p>
 
               <div className="form-field">
                 <label htmlFor="email-input">Work email</label>
@@ -125,10 +125,10 @@ export default function FinalCTA() {
               <input type="hidden" name="locale" value="en" />
 
               <button type="submit" className="form-btn" disabled={done}>
-                {done ? '✓ Profile on its way – check your inbox' : 'Get my free profile'}
+                {done ? '✓ Trial requested – check your inbox' : 'Get one month\'s free trial'}
               </button>
               <div className="form-foot">
-                Special offer · 3 months free subscription · includes 15 personality profiles.
+                Special offer · 1 month free subscription · limited to the first 100 companies.
               </div>
             </form>
           </div>

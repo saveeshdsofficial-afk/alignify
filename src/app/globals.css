@@ -1010,7 +1010,7 @@ footer::before {
 
 .intro-offer {
   position: relative;
-  display: flex; align-items: center; justify-content: space-between; gap: 24px;
+  display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px;
   max-width: 1080px; margin: 0 auto;
   padding: 22px 28px;
   border-radius: 14px;
@@ -1092,7 +1092,7 @@ footer::before {
   .pipeline-cell { padding: 28px 22px; }
   .sol-card { padding: 28px 22px 26px; }
   .price-card { padding: 24px 22px 26px; }
-  .intro-offer { padding: 20px 22px; flex-direction: column; align-items: flex-start; gap: 16px; }
+  .intro-offer { padding: 20px 22px; gap: 14px; }
   .pcard { padding: 28px 22px; }
   .tcard { padding: 28px 22px; }
   .impl-row { flex-direction: column; align-items: center; gap: 16px; }

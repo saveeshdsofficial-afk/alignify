@@ -5,12 +5,12 @@ interface Solution {
 
 const SOLUTIONS: Solution[] = [
   {
-    name: 'Your Playbook',
-    body: "A complete personality playbook on you, what motivates you, your style, what drives you. Generated from each individual's 28 question profile.",
+    name: 'Your Personality Profile',
+    body: 'A personality profile is created on you, what motivates you, your style, what drives you. A questionnaire is completed.',
   },
   {
-    name: 'Buyer Playbook',
-    body: 'The Alignify playbook covers personality, compatibility, and complementary elements to ensure you have the right pitch with the right tone, communication and connection for your product or service.',
+    name: 'The Buyer Playbook',
+    body: 'A buyers playbook is created on your prospect or customer, their buying style, how you interact, pitch, use tone and connect.',
   },
 ]
 
@@ -19,12 +19,12 @@ export default function Solutions() {
     <section className="section solutions-section">
       <div className="frame">
         <div className="section-head centered">
-          <span className="label">The Alignify Solution and Pricing</span>
+          <span className="label">The Pricing</span>
           <h2 className="section-h">
-            Two playbooks. <span className="it">One alignment engine.</span>
+            One alignment engine. <span className="it">Two playbooks, one price.</span>
           </h2>
           <p className="section-deck">
-            One platform with two playbooks. Use the &ldquo;you&rdquo; Playbook to understand yourself and the Alignify playbook to understand your buyer.
+            Create your personality profile to understand yourself and the Buyer playbook to understand your prospect or customer.
           </p>
         </div>
 
@@ -43,24 +43,6 @@ export default function Solutions() {
         </div>
 
         <div className="pricing-stack">
-          <div className="pricing-pair">
-            <article className="price-card teal">
-              <span className="price-eyebrow">Your Personality Playbook</span>
-              <div className="price-row">
-                <span className="price-big">$19.95</span>
-                <span className="price-unit">/ playbook</span>
-              </div>
-              <span className="price-rider">per playbook</span>
-            </article>
-            <article className="price-card teal">
-              <span className="price-eyebrow">Buyer Personality Playbook</span>
-              <div className="price-row">
-                <span className="price-big">$29.95</span>
-                <span className="price-unit">/ playbook</span>
-              </div>
-              <span className="price-rider">per playbook</span>
-            </article>
-          </div>
           <article className="price-card dark price-wide">
             <div className="price-wide-main">
               <span className="price-eyebrow">Alignify Subscription</span>
@@ -68,7 +50,9 @@ export default function Solutions() {
                 <span className="price-big">$99</span>
                 <span className="price-unit">/ month</span>
               </div>
-              <span className="price-rider">includes 3 Buyer Playbooks</span>
+              <span className="price-rider">
+                Includes the &ldquo;your&rdquo; personality profile and 5 Buyer Playbooks per month — thereafter $19.95 per playbook.
+              </span>
             </div>
           </article>
         </div>
@@ -84,7 +68,7 @@ export default function Solutions() {
               <span className="label">Introductory Offer</span>
             </div>
             <div className="intro-body">
-              3 months free subscription · Limited to the first 50 companies.
+              1 month free subscription · Limited to the first 100 companies.
             </div>
           </div>
           <div className="pricing-cta">
