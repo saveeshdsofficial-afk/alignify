@@ -8,6 +8,7 @@ import FinalCTA from '@/components/FinalCTA'
 import Testimonials from '@/components/Testimonials'
 import FAQ from '@/components/FAQ'
 import Footer from '@/components/Footer'
+import FloatingCTA from '@/components/FloatingCTA'
 
 export default function HomePage() {
   return (
@@ -22,6 +23,7 @@ export default function HomePage() {
       <Testimonials />
       <FAQ />
       <Footer />
+      <FloatingCTA />
     </>
   )
 }
