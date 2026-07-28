@@ -28,7 +28,7 @@ const MATRIX: MatrixRow[] = [
 
 export default function PCCA() {
   return (
-    <section className="section pcca-section">
+    <section className="section section-alt pcca-section">
       <div className="frame">
         <div className="section-head centered">
           <span className="label">The Solution</span>

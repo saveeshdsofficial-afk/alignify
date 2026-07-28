@@ -26,7 +26,7 @@ const QAS: QA[] = [
 
 export default function FAQ() {
   return (
-    <section className="section section-alt faq-section">
+    <section className="section faq-section">
       <div className="frame">
         <div className="faq-wrap">
           <div className="faq-head">
