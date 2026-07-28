@@ -151,7 +151,6 @@ img.brand-mark,
 /* ============ HERO LAYOUT ============ */
 .hero {
   padding: 60px 0 110px;
-  min-height: calc(100vh - 70px);
   display: flex; flex-direction: column; justify-content: center;
   position: relative;
 }
@@ -282,24 +281,6 @@ h1.hero-title .it {
 }
 .btn-ghost:hover { background: rgba(255, 255, 255, 0.08); border-color: var(--teal-bright); }
 .btn-ghost::after { content: '→'; opacity: 0.7; }
-
-.floating-cta {
-  position: fixed; right: 24px; bottom: 24px; z-index: 90;
-  display: inline-flex; align-items: center; gap: 8px;
-  padding: 14px 24px; border-radius: 100px;
-  font-family: var(--font-sans); font-size: 14px; font-weight: 700;
-  letter-spacing: 0.02em; text-decoration: none; cursor: pointer; color: var(--ink);
-  background: linear-gradient(135deg, var(--teal), var(--teal-bright));
-  box-shadow: 0 10px 34px rgba(33, 168, 159, 0.5);
-  opacity: 0; transform: translateY(16px) scale(0.96); pointer-events: none;
-  transition: opacity .3s ease, transform .3s ease, box-shadow .25s ease;
-}
-.floating-cta.is-visible { opacity: 1; transform: translateY(0) scale(1); pointer-events: auto; }
-.floating-cta:hover { transform: translateY(-2px) scale(1); box-shadow: 0 14px 46px rgba(62, 204, 196, 0.65); }
-.floating-cta::after { content: '→'; font-weight: 500; }
-@media (max-width: 640px) {
-  .floating-cta { right: 16px; bottom: 16px; padding: 12px 20px; font-size: 13px; }
-}
 
 /* ============ ALIGNMENT ENGINE — DISC WHEEL ============ */
 .engine-stage {
@@ -925,15 +906,6 @@ footer::before {
 }
 .sol-card p { font-size: 14.5px; line-height: 1.65; color: rgba(232, 236, 243, 0.7); }
 
-.sol-divider {
-  max-width: 1080px; margin: 0 auto 24px;
-  display: flex; align-items: center; gap: 18px;
-}
-.sol-divider::before, .sol-divider::after {
-  content: ''; flex: 1; height: 1px;
-  background: linear-gradient(90deg, transparent, var(--line-teal), transparent);
-}
-.sol-divider .label { white-space: nowrap; }
 
 .pricing-grid {
   display: grid; grid-template-columns: 1fr 1fr; gap: 22px;

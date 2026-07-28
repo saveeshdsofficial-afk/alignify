@@ -38,10 +38,6 @@ export default function Solutions() {
           ))}
         </div>
 
-        <div className="sol-divider">
-          <span className="label">Pricing</span>
-        </div>
-
         <div className="pricing-stack">
           <article className="price-card dark price-wide">
             <div className="price-wide-main">
