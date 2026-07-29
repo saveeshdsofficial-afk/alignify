@@ -914,7 +914,7 @@ footer::before {
 .pricing-grid.single { grid-template-columns: minmax(0, 520px); justify-content: center; }
 
 .pricing-stack { display: grid; gap: 22px; max-width: 1080px; margin: 0 auto 28px; }
-.intro-offer-main { position: relative; z-index: 1; }
+.intro-offer-main { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; }
 .pricing-cta { position: relative; z-index: 1; flex-shrink: 0; }
 .pricing-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
 .price-wide {
