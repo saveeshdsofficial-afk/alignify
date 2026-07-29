@@ -42,7 +42,7 @@ function Star() {
 
 export default function Testimonials() {
   return (
-    <section className="section section-alt">
+    <section className="section">
       <div className="frame">
         <div className="section-head centered">
           <span className="label">Evidence from the field</span>

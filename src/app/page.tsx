@@ -18,9 +18,9 @@ export default function HomePage() {
       <PCCA />
       <Solutions />
       <Pipeline />
-      <FinalCTA />
       <Testimonials />
       <FAQ />
+      <FinalCTA />
       <Footer />
     </>
   )
