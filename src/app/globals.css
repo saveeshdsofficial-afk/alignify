@@ -225,7 +225,6 @@ h1.hero-title .it {
   border: 1px solid var(--line);
   border-radius: 14px;
   backdrop-filter: blur(10px);
-  margin-bottom: 36px;
 }
 .hm-cell { display: flex; flex-direction: column; gap: 6px; position: relative; }
 .hm-cell:not(:last-child)::after {
