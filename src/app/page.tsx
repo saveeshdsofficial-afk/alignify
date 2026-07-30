@@ -17,10 +17,11 @@ export default function HomePage() {
       <Problem />
       <PCCA />
       <Solutions />
+      <FinalCTA />
       <Pipeline />
       <Testimonials />
       <FAQ />
-      <FinalCTA />
+      <FinalCTA id="cta-bottom" />
       <Footer />
     </>
   )

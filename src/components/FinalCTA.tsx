@@ -1,17 +1,24 @@
 'use client'
 
-import { useState, type FormEvent } from 'react'
+import { useId, useState, type FormEvent } from 'react'
 
 // Brevo form endpoint (from the embed code). The form keeps its custom styling
 // and submits here in the background, so the page never redirects.
 const BREVO_ACTION =
   'https://ac7154eb.sibforms.com/v2/serve/MUIFAH5K3YcaJRrpiOusEbTyFqdpk5RD1pj4by6Rt-JnFvg1eiYK-sS6SfYl0J6ng3WmXOXVZE3YvbCEQ9Yrd2lzK0vuF3LTt7u9NLZq1hDd_3IRv1DiSeQ4t-8dU0-xxYIaKHyX083myKGhHNuK-DEWNRu55SRzFZO7MbpTADZFdNCkUpcF3IbaPOvSJmjUs4dOSIVrbhjRJNPJEQ=='
 
-export default function FinalCTA() {
+export default function FinalCTA({ id = 'cta' }: { id?: string }) {
   const [done, setDone] = useState(false)
   const [email, setEmail] = useState('')
   const [company, setCompany] = useState('')
   const [linkedin, setLinkedin] = useState('')
+
+  // Unique per instance so the form can be rendered more than once on a page
+  // without duplicate element ids (which would break label focus).
+  const uid = useId()
+  const emailId = `${uid}-email`
+  const companyId = `${uid}-company`
+  const linkedinId = `${uid}-linkedin`
 
   // Submit to Brevo the same way their own script does: a multipart FormData POST.
   // `no-cors` lets the cross-origin request through (we can't read the opaque
@@ -38,7 +45,7 @@ export default function FinalCTA() {
   }
 
   return (
-    <section className="section" id="cta">
+    <section className="section" id={id}>
       <div className="frame">
         <div className="cta-card">
           <div className="cta-inner">
@@ -75,10 +82,10 @@ export default function FinalCTA() {
               <p className="form-sub">Fill this out and start your one month free trial.</p>
 
               <div className="form-field">
-                <label htmlFor="email-input">Work email</label>
+                <label htmlFor={emailId}>Work email</label>
                 <input
                   type="email"
-                  id="email-input"
+                  id={emailId}
                   name="EMAIL"
                   placeholder="you@company.com"
                   required
@@ -87,10 +94,10 @@ export default function FinalCTA() {
                 />
               </div>
               <div className="form-field">
-                <label htmlFor="company-input">Company</label>
+                <label htmlFor={companyId}>Company</label>
                 <input
                   type="text"
-                  id="company-input"
+                  id={companyId}
                   name="COMPANY:name"
                   placeholder="Company Name"
                   required
@@ -99,10 +106,10 @@ export default function FinalCTA() {
                 />
               </div>
               <div className="form-field">
-                <label htmlFor="linkedin-input">Personal LinkedIn</label>
+                <label htmlFor={linkedinId}>Personal LinkedIn</label>
                 <input
                   type="url"
-                  id="linkedin-input"
+                  id={linkedinId}
                   name="LINKEDIN"
                   placeholder="linkedin.com/in/..."
                   required
