@@ -54,13 +54,8 @@ export default function Solutions() {
         </div>
 
         <div className="intro-offer">
-          <span className="intro-corner tl" />
-          <span className="intro-corner tr" />
-          <span className="intro-corner bl" />
-          <span className="intro-corner br" />
           <div className="intro-offer-main">
             <div className="intro-eyebrow">
-              <span className="intro-star">★</span>
               <span className="label">Introductory Offer</span>
             </div>
             <div className="intro-body">

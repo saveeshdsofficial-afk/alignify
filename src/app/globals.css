@@ -1013,23 +1013,10 @@ footer::before {
   background: radial-gradient(ellipse 600px 200px at 0% 50%, rgba(62, 204, 196, 0.22), transparent 70%);
   pointer-events: none;
 }
-.intro-corner {
-  position: absolute; width: 14px; height: 14px;
-  border: 1.5px solid var(--teal-bright);
-  z-index: 2;
-}
-.intro-corner.tl { top: 8px; left: 8px; border-right: none; border-bottom: none; }
-.intro-corner.tr { top: 8px; right: 8px; border-left: none; border-bottom: none; }
-.intro-corner.bl { bottom: 8px; left: 8px; border-right: none; border-top: none; }
-.intro-corner.br { bottom: 8px; right: 8px; border-left: none; border-top: none; }
 .intro-eyebrow {
   position: relative; z-index: 1;
   display: flex; align-items: center; gap: 10px;
   margin-bottom: 6px;
-}
-.intro-star {
-  color: var(--teal-bright); font-size: 14px;
-  text-shadow: 0 0 12px rgba(62, 204, 196, 0.7);
 }
 .intro-body {
   position: relative; z-index: 1;
