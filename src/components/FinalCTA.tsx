@@ -41,15 +41,27 @@ export default function FinalCTA() {
     <section className="section" id="cta">
       <div className="frame">
         <div className="cta-card">
-          <div className="cta-inner cta-centered">
-            <div className="section-head centered">
-              <span className="label">Free Trial</span>
+          <div className="cta-inner">
+            <div>
+              <div className="cta-eyebrow">
+                <span className="label">Free Trial</span>
+              </div>
               <h2 className="cta-h">
                 Sign up <span className="it">now.</span>
               </h2>
               <p className="cta-deck">
                 Start your one month free trial — limited to the first 100 companies.
               </p>
+              <div className="cta-proof">
+                <div className="cta-proof-avs">
+                  <div className="av">SJ</div>
+                  <div className="av">MT</div>
+                  <div className="av">RN</div>
+                </div>
+                <div className="cta-proof-text">
+                  <strong>Revenue leaders</strong> are already benefiting from the platform
+                </div>
+              </div>
             </div>
 
             <form className="cta-form" onSubmit={handleSubmit}>
@@ -118,17 +130,6 @@ export default function FinalCTA() {
                 Special offer · 1 month free subscription · limited to the first 100 companies.
               </div>
             </form>
-
-            <div className="cta-proof">
-              <div className="cta-proof-avs">
-                <div className="av">SJ</div>
-                <div className="av">MT</div>
-                <div className="av">RN</div>
-              </div>
-              <div className="cta-proof-text">
-                <strong>Revenue leaders</strong> are already benefiting from the platform
-              </div>
-            </div>
           </div>
         </div>
       </div>
