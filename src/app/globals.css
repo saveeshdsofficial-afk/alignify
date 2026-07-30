@@ -654,6 +654,7 @@ h1.hero-title .it {
   mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
 }
 .cta-inner { position: relative; z-index: 1; display: grid; grid-template-columns: 1.1fr 1fr; gap: 64px; align-items: center; }
+.cta-form-only { max-width: 480px; margin: 0 auto; }
 .cta-eyebrow { display: inline-flex; align-items: center; gap: 14px; margin-bottom: 24px; color: var(--teal-bright); }
 .cta-eyebrow::before, .cta-eyebrow::after { content: ''; height: 1px; background: var(--teal-bright); }
 .cta-eyebrow::before { width: 28px; }

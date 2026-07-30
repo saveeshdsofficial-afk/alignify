@@ -7,7 +7,8 @@ import { useId, useState, type FormEvent } from 'react'
 const BREVO_ACTION =
   'https://ac7154eb.sibforms.com/v2/serve/MUIFAH5K3YcaJRrpiOusEbTyFqdpk5RD1pj4by6Rt-JnFvg1eiYK-sS6SfYl0J6ng3WmXOXVZE3YvbCEQ9Yrd2lzK0vuF3LTt7u9NLZq1hDd_3IRv1DiSeQ4t-8dU0-xxYIaKHyX083myKGhHNuK-DEWNRu55SRzFZO7MbpTADZFdNCkUpcF3IbaPOvSJmjUs4dOSIVrbhjRJNPJEQ=='
 
-export default function FinalCTA({ id = 'cta' }: { id?: string }) {
+// `formOnly` renders just the white form card, centered — no heading/deck/proof.
+export default function FinalCTA({ id = 'cta', formOnly = false }: { id?: string; formOnly?: boolean }) {
   const [done, setDone] = useState(false)
   const [email, setEmail] = useState('')
   const [company, setCompany] = useState('')
@@ -44,6 +45,85 @@ export default function FinalCTA({ id = 'cta' }: { id?: string }) {
     }, 5000)
   }
 
+  const form = (
+    <form className="cta-form" onSubmit={handleSubmit}>
+      <span className="corner tl" />
+      <span className="corner tr" />
+      <span className="corner bl" />
+      <span className="corner br" />
+      <h3 className="form-h">
+        Get one month&apos;s free <span className="it">trial</span>
+      </h3>
+      <p className="form-sub">Fill this out and start your one month free trial.</p>
+
+      <div className="form-field">
+        <label htmlFor={emailId}>Work email</label>
+        <input
+          type="email"
+          id={emailId}
+          name="EMAIL"
+          placeholder="you@company.com"
+          required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+      </div>
+      <div className="form-field">
+        <label htmlFor={companyId}>Company</label>
+        <input
+          type="text"
+          id={companyId}
+          name="COMPANY:name"
+          placeholder="Company Name"
+          required
+          value={company}
+          onChange={(e) => setCompany(e.target.value)}
+        />
+      </div>
+      <div className="form-field">
+        <label htmlFor={linkedinId}>Personal LinkedIn</label>
+        <input
+          type="url"
+          id={linkedinId}
+          name="LINKEDIN"
+          placeholder="linkedin.com/in/..."
+          required
+          value={linkedin}
+          onChange={(e) => setLinkedin(e.target.value)}
+        />
+      </div>
+
+      {/* Brevo anti-bot honeypot — must be present and empty */}
+      <input
+        type="text"
+        name="email_address_check"
+        defaultValue=""
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px' }}
+      />
+      <input type="hidden" name="locale" value="en" />
+
+      <button type="submit" className="form-btn" disabled={done}>
+        {done ? '✓ Trial requested – check your inbox' : 'Get one month\'s free trial'}
+      </button>
+      <div className="form-foot">
+        Special offer · 1 month free subscription · limited to the first 100 companies.
+      </div>
+    </form>
+  )
+
+  if (formOnly) {
+    return (
+      <section className="section" id={id}>
+        <div className="frame">
+          <div className="cta-form-only">{form}</div>
+        </div>
+      </section>
+    )
+  }
+
   return (
     <section className="section" id={id}>
       <div className="frame">
@@ -71,72 +151,7 @@ export default function FinalCTA({ id = 'cta' }: { id?: string }) {
               </div>
             </div>
 
-            <form className="cta-form" onSubmit={handleSubmit}>
-              <span className="corner tl" />
-              <span className="corner tr" />
-              <span className="corner bl" />
-              <span className="corner br" />
-              <h3 className="form-h">
-                Get one month&apos;s free <span className="it">trial</span>
-              </h3>
-              <p className="form-sub">Fill this out and start your one month free trial.</p>
-
-              <div className="form-field">
-                <label htmlFor={emailId}>Work email</label>
-                <input
-                  type="email"
-                  id={emailId}
-                  name="EMAIL"
-                  placeholder="you@company.com"
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-              </div>
-              <div className="form-field">
-                <label htmlFor={companyId}>Company</label>
-                <input
-                  type="text"
-                  id={companyId}
-                  name="COMPANY:name"
-                  placeholder="Company Name"
-                  required
-                  value={company}
-                  onChange={(e) => setCompany(e.target.value)}
-                />
-              </div>
-              <div className="form-field">
-                <label htmlFor={linkedinId}>Personal LinkedIn</label>
-                <input
-                  type="url"
-                  id={linkedinId}
-                  name="LINKEDIN"
-                  placeholder="linkedin.com/in/..."
-                  required
-                  value={linkedin}
-                  onChange={(e) => setLinkedin(e.target.value)}
-                />
-              </div>
-
-              {/* Brevo anti-bot honeypot — must be present and empty */}
-              <input
-                type="text"
-                name="email_address_check"
-                defaultValue=""
-                tabIndex={-1}
-                autoComplete="off"
-                aria-hidden="true"
-                style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px' }}
-              />
-              <input type="hidden" name="locale" value="en" />
-
-              <button type="submit" className="form-btn" disabled={done}>
-                {done ? '✓ Trial requested – check your inbox' : 'Get one month\'s free trial'}
-              </button>
-              <div className="form-foot">
-                Special offer · 1 month free subscription · limited to the first 100 companies.
-              </div>
-            </form>
+            {form}
           </div>
         </div>
       </div>

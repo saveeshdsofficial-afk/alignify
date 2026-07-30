@@ -17,7 +17,7 @@ export default function HomePage() {
       <Problem />
       <PCCA />
       <Solutions />
-      <FinalCTA />
+      <FinalCTA formOnly />
       <Pipeline />
       <Testimonials />
       <FAQ />
