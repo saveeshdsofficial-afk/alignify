@@ -355,7 +355,7 @@ h1.hero-title .it {
 .section-h {
   font-family: var(--font-display); font-weight: 700;
   font-size: clamp(36px, 4.8vw, 62px);
-  line-height: 1.02; letter-spacing: -0.03em;
+  line-height: 1.1; letter-spacing: -0.03em;
   background: linear-gradient(180deg, #ffffff 0%, #b8c2cc 100%);
   -webkit-background-clip: text; background-clip: text;
   -webkit-text-fill-color: transparent;
