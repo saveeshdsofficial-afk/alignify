@@ -41,13 +41,12 @@ export default function Solutions() {
         <div className="pricing-stack">
           <article className="price-card dark price-wide">
             <div className="price-wide-main">
-              <span className="price-eyebrow">Alignify Subscription</span>
+              <span className="price-eyebrow">Monthly subscription</span>
               <div className="price-row">
                 <span className="price-big">$99</span>
-                <span className="price-unit">/ month</span>
               </div>
               <span className="price-rider">
-                Includes the &ldquo;your&rdquo; personality profile and 5 Buyer Playbooks per month — thereafter $19.95 per playbook.
+                Includes obtaining your personality profile and thereafter 5 buyer playbooks per month – additional playbooks $29.95 each.
               </span>
             </div>
           </article>
