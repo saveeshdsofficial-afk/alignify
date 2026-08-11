@@ -21,10 +21,10 @@ export default function Solutions() {
         <div className="section-head centered">
           <span className="label">The Pricing</span>
           <h2 className="section-h">
-            One alignment engine. <span className="it">Two playbooks, one price.</span>
+            One alignment engine – <span className="it">two playbooks.</span>
           </h2>
           <p className="section-deck">
-            Create your personality profile to understand yourself and the Buyer playbook to understand your prospect or customer.
+            Your personality profile understands you; the Buyer playbook understands your prospect and how to sell to them.
           </p>
         </div>
 
@@ -43,12 +43,34 @@ export default function Solutions() {
             <div className="price-wide-main">
               <span className="price-eyebrow">Monthly subscription</span>
               <div className="price-row">
-                <span className="price-big">$99</span>
+                <span className="price-big">$9.90</span>
+                <span className="price-unit">/ per user*</span>
               </div>
-              <span className="price-rider">
-                Includes obtaining your personality profile and thereafter 5 buyer playbooks per month – additional playbooks $29.95 each.
-              </span>
+              <span className="price-rider">Includes your playbook, user setup, portal access.</span>
             </div>
+          </article>
+
+          <div className="pricing-plus" aria-hidden="true">+</div>
+
+          <article className="price-card dark bundle-card">
+            <span className="price-eyebrow">Buyer Playbook bundles</span>
+            <div className="bundle-grid">
+              <div className="bundle-item">
+                <span className="bundle-name">10 pack</span>
+                <span className="bundle-price">$299*</span>
+              </div>
+              <div className="bundle-item">
+                <span className="bundle-name">25 pack</span>
+                <span className="bundle-price">$675*</span>
+              </div>
+              <div className="bundle-item">
+                <span className="bundle-name">75 pack</span>
+                <span className="bundle-price">$1875*</span>
+              </div>
+            </div>
+            <span className="price-rider bundle-note">
+              *Buy the bundle that best suits you, each bundle can be used across multiple company users.
+            </span>
           </article>
         </div>
 
@@ -58,7 +80,7 @@ export default function Solutions() {
               <span className="label">Introductory Offer</span>
             </div>
             <div className="intro-body">
-              1 month free subscription · Limited to the first 100 companies.
+              6 months free subscription · Limited to the first 100 users.
             </div>
           </div>
         </div>

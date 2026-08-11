@@ -918,6 +918,26 @@ footer::before {
 .price-wide .price-eyebrow { margin-bottom: 4px; }
 .price-wide .price-row { justify-content: center; }
 .price-wide .price-rider { text-align: center; }
+.pricing-plus {
+  text-align: center; font-family: var(--font-display); font-weight: 300;
+  font-size: 34px; line-height: 1; color: var(--teal-bright); opacity: 0.9;
+}
+.bundle-card {
+  display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px;
+}
+.bundle-card .price-eyebrow { margin-bottom: 2px; }
+.bundle-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; width: 100%; }
+.bundle-item {
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  padding: 20px 16px; border: 1px solid var(--line-strong); border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+}
+.bundle-name {
+  font-family: var(--font-sans); font-size: 12px; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--teal-bright);
+}
+.bundle-price { font-family: var(--font-display); font-weight: 700; font-size: 28px; color: #fff; }
+.bundle-note { color: rgba(232, 236, 243, 0.6); font-size: 12.5px; }
 .price-card {
   padding: 28px 30px 30px;
   border-radius: 14px;
@@ -1067,6 +1087,7 @@ footer::before {
   .prob-card { padding: 28px 22px; }
   .pipeline-cell { padding: 28px 22px; }
   .sol-card { padding: 28px 22px 26px; }
+  .bundle-grid { grid-template-columns: 1fr; }
   .price-card { padding: 24px 22px 26px; }
   .intro-offer { padding: 20px 22px; gap: 14px; }
   .pcard { padding: 28px 22px; }
