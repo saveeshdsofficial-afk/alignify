@@ -44,7 +44,7 @@ export default function Solutions() {
               <span className="price-eyebrow">Monthly subscription</span>
               <div className="price-row">
                 <span className="price-big">$9.99</span>
-                <span className="price-unit">/ per user*</span>
+                <span className="price-unit">/ per user</span>
               </div>
               <span className="price-rider">Includes your playbook, user setup, portal access.</span>
             </div>
@@ -56,16 +56,16 @@ export default function Solutions() {
             <span className="price-eyebrow">Buyer Playbook bundles</span>
             <div className="bundle-grid">
               <div className="bundle-item">
-                <span className="bundle-name">10 pack</span>
-                <span className="bundle-price">$299*</span>
+                <span className="bundle-name">10 pack*</span>
+                <span className="bundle-price">$299</span>
               </div>
               <div className="bundle-item">
-                <span className="bundle-name">25 pack</span>
-                <span className="bundle-price">$699*</span>
+                <span className="bundle-name">25 pack*</span>
+                <span className="bundle-price">$699</span>
               </div>
               <div className="bundle-item">
-                <span className="bundle-name">75 pack</span>
-                <span className="bundle-price">$1899*</span>
+                <span className="bundle-name">75 pack*</span>
+                <span className="bundle-price">$1899</span>
               </div>
             </div>
             <span className="price-rider bundle-note">
