@@ -43,7 +43,7 @@ export default function Solutions() {
             <div className="price-wide-main">
               <span className="price-eyebrow">Monthly subscription</span>
               <div className="price-row">
-                <span className="price-big">$9.90</span>
+                <span className="price-big">$9.99</span>
                 <span className="price-unit">/ per user*</span>
               </div>
               <span className="price-rider">Includes your playbook, user setup, portal access.</span>
