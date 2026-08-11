@@ -52,9 +52,9 @@ export default function FinalCTA({ id = 'cta', formOnly = false }: { id?: string
       <span className="corner bl" />
       <span className="corner br" />
       <h3 className="form-h">
-        Get six months&apos; free <span className="it">trial</span>
+        Get 6 months free <span className="it">trial</span>
       </h3>
-      <p className="form-sub">Fill this out and start your six month free trial.</p>
+      <p className="form-sub">Fill this out and start your 6 months free trial.</p>
 
       <div className="form-field">
         <label htmlFor={emailId}>Work email</label>
@@ -106,7 +106,7 @@ export default function FinalCTA({ id = 'cta', formOnly = false }: { id?: string
       <input type="hidden" name="locale" value="en" />
 
       <button type="submit" className="form-btn" disabled={done}>
-        {done ? '✓ Trial requested – check your inbox' : 'Get six months\' free trial'}
+        {done ? '✓ Trial requested – check your inbox' : 'Get 6 months free trial'}
       </button>
       <div className="form-foot">
         Special offer · 6 months free subscription · limited to the first 100 users.
