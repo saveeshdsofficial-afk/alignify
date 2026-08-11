@@ -61,11 +61,11 @@ export default function Solutions() {
               </div>
               <div className="bundle-item">
                 <span className="bundle-name">25 pack</span>
-                <span className="bundle-price">$675*</span>
+                <span className="bundle-price">$699*</span>
               </div>
               <div className="bundle-item">
                 <span className="bundle-name">75 pack</span>
-                <span className="bundle-price">$1875*</span>
+                <span className="bundle-price">$1899*</span>
               </div>
             </div>
             <span className="price-rider bundle-note">
