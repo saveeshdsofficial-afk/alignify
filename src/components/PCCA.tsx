@@ -31,7 +31,7 @@ export default function PCCA() {
     <section className="section section-alt pcca-section">
       <div className="frame">
         <div className="section-head centered">
-          <span className="label">The Solution</span>
+          <span className="label">How It Works</span>
           <h2 className="section-h">
             The Alignify <span className="it">model.</span>
           </h2>

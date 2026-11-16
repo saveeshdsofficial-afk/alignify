@@ -5,12 +5,12 @@ export default function Pipeline() {
     <section className="section section-alt">
       <div className="frame">
         <div className="section-head centered">
-          <span className="label">The Sales Cycle</span>
+          <span className="label">The Solution</span>
           <h2 className="section-h">
-            Aligned at <span className="it">every stage.</span>
+            Align every prospect <span className="it">and every customer.</span>
           </h2>
           <p className="section-deck">
-            Alignify can make the difference between business won or lost – providing buyer insights at every interaction point, so you win more often.
+            Alignify can make the difference between business won or lost – by providing prospect and customer sales insights in our sales playbooks you win more often.
           </p>
         </div>
 
@@ -29,13 +29,13 @@ function ProspectingCell() {
     <div className="pipeline-cell">
       <div className="pipeline-step">
         <span className="label num">01</span>
-        <span className="label" style={{ color: 'var(--slate-soft)' }}>Prospecting</span>
+        <span className="label" style={{ color: 'var(--slate-soft)' }}>The Prospect Playbook</span>
       </div>
       <h4>
         Know your buyer <span className="it">and win.</span>
       </h4>
       <p className="desc">
-        Every prospect and every customer is known and aligned before you start selling. How they buy, how they communicate, and how to sell to them. Aligned connections win more often.
+        Every prospect is known and understood before you start selling. How they buy, how they communicate, and how to sell to them. Aligned connections win more often.
       </p>
       <div className="cell-mini">
         <div className="mini-row"><span>Sarah Chen · VP Eng</span><span className="hi">94</span></div>
@@ -57,13 +57,13 @@ function PitchCell() {
     <div className="pipeline-cell">
       <div className="pipeline-step">
         <span className="label num">02</span>
-        <span className="label" style={{ color: 'var(--slate-soft)' }}>The Pitch</span>
+        <span className="label" style={{ color: 'var(--slate-soft)' }}>The Customer Playbook</span>
       </div>
       <h4>
-        A pitch that <span className="it">wins.</span>
+        A pitch that <span className="it">wins more.</span>
       </h4>
       <p className="desc">
-        Alignify connects tone, structure, and buyer motivators so you know how your buyer thinks. Alignify provides the insights so you are prepared to win.
+        Alignify allows you to understand your existing customers, we connect tone, structure, and customer motivators so you know how your customer thinks and acts. Alignify provides the insights so you can win more from existing customers.
       </p>
       <div className="cell-mini">
         <div className="mini-bar-wrap">
@@ -85,13 +85,13 @@ function CloseCell() {
     <div className="pipeline-cell">
       <div className="pipeline-step">
         <span className="label num">03</span>
-        <span className="label" style={{ color: 'var(--slate-soft)' }}>The Close</span>
+        <span className="label" style={{ color: 'var(--slate-soft)' }}>Your Playbook</span>
       </div>
       <h4>
         Close <span className="it">to win.</span>
       </h4>
       <p className="desc">
-        Alignify addresses how to identify the buying gap. Know how to close and how to connect. Be forearmed and close to win.
+        Alignify addresses how to identify any personality gaps, by understanding yourself you will know how to communicate, how to connect and how to close to win.
       </p>
       <div className="cell-mini">
         <div className="do-dont">
